@@ -14,6 +14,7 @@ jobs:
       action_bot_email: "41898282+github-actions[bot]@users.noreply.github.com"
       commit_author: ${{ steps.get_author.outputs.out }}
     steps:
+      - uses: actions/checkout@v4
       - id: get_author
         run: >
           git log -1 "$SHA" --format="%aE" > "$GITHUB_OUTPUT"
