@@ -1,6 +1,6 @@
 LSR no.,Extraction sheet dimension,Variable to extract,Categories,Class ID,Class  label,Class definition,Parent class,Ontology spreadsheet
 -1,Study identification,Author,Free text,GMHO:0000107,author identification,A textual entity intended to identify a particular author. ,textual entity,Research methods
-1,Study identification,Year,Numerical,GMHO:0000120,publication year textual entity,A textual entity documenting the year in which some study was published.,textual entity,Research methods
+-1,Study identification,Year,Numerical,GMHO:0000120,publication year textual entity,A textual entity documenting the year in which some study was published.,textual entity,Research methods
 1,Study identification,Country,Free text,BCIO:026001,country of intervention,A geographical location of a country where the intervention takes place.,geographical location,Research methods
 1,Study identification,Email,Free text,GMHO:0000170,author email address textual entity,A textual entity documenting the email address of an author of a publication.,textual entity,Research methods
 1,Study identification,Sponsorship source,Free text,IAO:0000624,funding source declaration textual entity,A textual entity documenting the source of funding that supported some study.,textual entity,Research methods
