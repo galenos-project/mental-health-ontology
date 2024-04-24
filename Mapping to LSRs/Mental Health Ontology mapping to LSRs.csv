@@ -1,6 +1,6 @@
 LSR no.,Extraction sheet dimension,Variable to extract,Categories,Class ID,Class  label,Class definition,Parent class,Ontology spreadsheet
--1,Study identification,Author,Free text,GMHO:0000107,author identification,A textual entity intended to identify a particular author. ,textual entity,Research methods
--1,Study identification,Year,Numerical,GMHO:0000120,publication year textual entity,A textual entity documenting the year in which some study was published.,textual entity,Research methods
+1,Study identification,Author,Free text,GMHO:0000107,author identification,A textual entity intended to identify a particular author. ,textual entity,Research methods
+1,Study identification,Year,Numerical,GMHO:0000120,publication year textual entity,A textual entity documenting the year in which some study was published.,textual entity,Research methods
 1,Study identification,Country,Free text,BCIO:026001,country of intervention,A geographical location of a country where the intervention takes place.,geographical location,Research methods
 1,Study identification,Email,Free text,GMHO:0000170,author email address textual entity,A textual entity documenting the email address of an author of a publication.,textual entity,Research methods
 1,Study identification,Sponsorship source,Free text,IAO:0000624,funding source declaration textual entity,A textual entity documenting the source of funding that supported some study.,textual entity,Research methods
@@ -106,7 +106,7 @@ Rating scale used for inclusion and threshold used (free text)",GMHO:0000146,dep
 2,Population,Baseline clinical variables (anxiety),,GMHO:0000158,pre-intervention anxiety symptom severity,Anxiety symptom severity before the intervention delivery begins.,anxiety symptom severity,Intervention population
 2,Population,Baseline clinical variables (insomnia),,GMHO:0000161,pre-intervention insomnia severity,Insomnia symptom severity before the intervention delivery begins.,insomnia symptom severity,Intervention population
 2,Population,Baseline clinical variables (substance use),,GMHO:0000164,pre-intervention substance use severity,Substance use severity before the intervention delivery begins.,substance use severity,Intervention population
-2,Intervention,"Name of arm (e.g., exercise only, exercise + psychotherapy)",,GMHO:0000004,intervention arm name,A written name intended to identify a particular intervention arm. ,written name,Intervention content and delivery
+2,Intervention,"Name of arm (e.g., exercise only, exercise   psychotherapy)",,GMHO:0000004,intervention arm name,A written name intended to identify a particular intervention arm. ,written name,Intervention content and delivery
 2,Intervention,Exercise type,,BCIO:036042,physical performance behaviour,"An individual human behaviour that involves maintenance or improvement of flexibility, strength, balance or cardiovascular fitness.",individual human behaviour ,Intervention content and delivery
 2,Intervention,Exercise type,,GMHO:0000194,physical performance behaviour pattern,An individual human behaviour pattern that involves repeated physical performance behaviour.,individual human behaviour pattern,Intervention content and delivery
 2,Intervention,Aerobic exercise,,GMHO:0000192,cardiovascular exercise behaviour,Physical performance behaviour pattern that increases heart rate and respiration while using large muscle groups repetitively and rhythmically.,physical performance behaviour pattern,Intervention content and delivery
@@ -362,7 +362,7 @@ structural,,,,SEPIO:0000125,research study,A planned process that executes some 
 structural,,,,OBI:0001755,selection criterion,A directive information entity which defines and states a principle of standard by which selection process may take place.,directive information entity,
 structural,,,,ADDICTO:0000399,self-identity,An identity that a person has about themselves.,identity,
 structural,,,,BFO:0000029,site,b is a site means: b is a three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof.,immaterial entity,
-structural,,,,BFO:0000020,specifically dependent continuant,b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b�s existence. ,continuant,
+structural,,,,BFO:0000020,specifically dependent continuant,b is a specifically dependent continuant = Def. b is a continuant and there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b�s existence. ,continuant,
 structural,,,,OPMI:0000326,status,,realizable entity,
 structural,,,,BFO:0000008,temporal region,A temporal region is an occurrent entity that is part of time as defined relative to some reference frame.,occurrent,
 structural,,,,CHEBI:35473,tranquilizing drug,"A traditional grouping of drugs said to have a soothing or calming effect on mood, thought or behaviour.",central nervous system depressant,
