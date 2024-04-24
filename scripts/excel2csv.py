@@ -18,7 +18,7 @@ def main():
 
     with open(output, "w") as f:
         writer = csv.writer(f)
-        writer.writerows([[c.value for c in row] for row in wb.rows])
+        writer.writerows([[c.value for c in row] for row in wb.active.rows])
 
 
 if __name__ == "__main__":
