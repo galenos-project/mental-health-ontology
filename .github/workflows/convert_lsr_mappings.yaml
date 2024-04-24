@@ -9,6 +9,7 @@ permissions:
     contents: write
 jobs:
   get_context:
+    runs-on: ubuntu-latest
     outputs:
       action_bot_email: "41898282+github-actions[bot]@users.noreply.github.com"
       commit_author: ${{ steps.get_author.outputs.out }}
@@ -19,6 +20,7 @@ jobs:
         env:
           SHA: ${{ github.sha }}
   convert_to_csv:
+    runs-on: ubuntu-latest
     name: Convert LSR mapping from Excel to CSV
     needs: get_context
     if: ${{ needs.get_context.outputs.commit_author != needs.get_context.outputs.action_bot_email }}
@@ -39,6 +41,7 @@ jobs:
           message: "Converted LSR mapping Excel to CSV"
 
   convert_to_excel:
+    runs-on: ubuntu-latest
     name: Convert LSR mapping from CSV to Excel
     needs: get_context
     if: ${{ needs.get_context.outputs.commit_author != needs.get_context.outputs.action_bot_email }}
