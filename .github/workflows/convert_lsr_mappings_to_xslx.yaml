@@ -40,3 +40,4 @@ jobs:
           add: 'Mapping to LSRs'
           default_author: 'github_actions'
           message: "Converted LSR mapping CSV to Excel"
+          push: true
