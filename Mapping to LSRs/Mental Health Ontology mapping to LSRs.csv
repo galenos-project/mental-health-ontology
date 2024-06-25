@@ -453,7 +453,7 @@ structural,,,,OMRSE:00000191,residential facility,A facility that has at least o
 structural,,,,BCIO:026036,retail facility,A facility used as an outlet for shopping.,facility,
 structural,,,,ENVO:00000064,road,"An open way for the passage of vehicles, persons, or animals on land",outdoor environment,
 structural,,,,BFO:0000006,spatial region,A spatial region is a continuant entity that is a continuant_part_of spaceR as defined relative to some frame R. ,immaterial entity,
-structural,,,,GMHO:0000106,study recruitment setting,An aggregate of entities that form the environment in which participants are recruited for a study.,object aggregate,
+3,Methods,setting/recruitment,"Select boxes (Community, Primary Care, Secondary or Tertiary- outpatient / inpatient, NR, Unclear)",GMHO:0000106,study recruitment setting,An aggregate of entities that form the environment in which participants are recruited for a study.,object aggregate,
 structural,,,,BCIO:026041,transportation,Methods of traveling from one place to another.,site,
 structural,,,,ADDICTO:0001255 ,cross over design,A mixed study design in which two or more groups experience the same study processes but in a different order.,mixed study design,
 structural,,,,IAO:0000303,institutional identification,A textual entity intended to identify a particular institution.,textual entity,
