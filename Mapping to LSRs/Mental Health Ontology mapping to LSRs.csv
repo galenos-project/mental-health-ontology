@@ -85,7 +85,7 @@ Rating scale used for inclusion and threshold used (free text)",GMHO:0000146,dep
 2,Methods,RCT,Category,ADDICTO:0001263,randomised controlled trial design,A study design in which participants are randomly assigned to two or more study arms. ,study design,Research methods
 2,Methods,qRCT (quasi),Category,ADDICTO:0001278,quasi-randomised controlled trial design,A study design in which the method for assigning participants is known but not strictly random.,study design,Research methods
 2,Methods,cRCT (cluster),Category,ADDICTO:0001277,cluster randomised controlled trial design,A randomised controlled trial design in which pre-existing groups of participants are randomly allocated to intervention arms.,study design,Research methods
-2,Methods,single arm design,Category,ADDICTO:0001279,single-arm intervention design,A study design with only one study arm delivered to all participants.,study design,Research methods
+2,Methods,single arm design,Category,ADDICTO:0001279,single-arm intervention design,An interventional study design in which all the participants receive the same type of intervention.,interventional study design,Research methods
 2,Methods,Number of arms,Numerical,GMHO:0000117,number of intervention arms,A data item that is about the number of intervention groups in a study.,data item,Intervention population
 2,Methods,Number of participants randomised (total),Numerical,GMHO:0000154,number of randomised intervention participants,Number of intervention participants who were randomly allocated to study arms within an intervention.,number of intervention participants,Intervention population
 2,Methods,Power calculation performed and sample size attained?,"Category options: 
