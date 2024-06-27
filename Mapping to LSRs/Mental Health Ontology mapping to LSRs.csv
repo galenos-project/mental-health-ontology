@@ -375,7 +375,7 @@ structural,,,,STATO:0000150,minimum value,A data item which denotes the smallest
 structural,,,,BCIO:008515,number of contact events,A data item that is the number of contact events in an intervention temporal part.,data item,
 structural,,,,BFO:0000038,one-dimensional temporal region,A one-dimensional temporal region is a temporal region that is extended.,temporal region,
 structural,,,,GMHO:0000127,study arm,An information content entity that is about an intervention scenario and designates it as part of an intervention evaluation study.,information content entity,
-structural,,,,GMHO:0000036,adverse change in a bodily measurement parameter,An adverse event associated with a change in a person's bodily meeasurement parameters.,adverse event following an intervention,
+structural,,,,GMHO:0000036,adverse change in a bodily measurement parameter,An adverse event associated with a change in a person's bodily measurement parameters.,adverse event following an intervention,
 structural,,,,GMHO:0000049,affective psychotic disorder symptom,"A psychotic disorder symptom is characterized by a person experiencing depression, anxiety or low moods.",psychotic disorder symptom,
 structural,,,,GMHO:0000130,anhedonia,A mental disposition that is realised by experiencing low pleasure or interest in response to various positively valenced stimuli.,mental disposition,
 structural,,,,GMHO:0000011,Anxiety and depression subscale of Positive and Negative Syndrome Scale data item,Positive and Negative Syndrome Scale data item that is the recording of the output of the subscale about affective psychotic disorder symptoms.,Positive and Negative Syndrome Scale data item,
