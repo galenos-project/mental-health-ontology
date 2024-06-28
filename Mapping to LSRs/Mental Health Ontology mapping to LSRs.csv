@@ -202,7 +202,7 @@ Rating scale used for inclusion and threshold used (free text)",GMHO:0000146,dep
 3,Methods,State of symptoms,"Select box (acutely ill, clinically stable, unclear)",GMHO:0000087,symptom severity,A data item that is about the location on the dimension of a symptom.,data item,Intervention population
 3,Methods,Psychosis subgroup,Category,GMHO:0000098,psychosis experience,"A symptom that involves a person experiencing delusions, hallucinations, conceptual disorganisation or disorganised speech or behaviour",symptom,Intervention population
 3,Methods,Psychosis subgroup (first-episode psychosis),Category,GMHO:0000094,first psychosis experience history,A clinical history in which there is a history of only one period of psychosis experience.,clinical history of psychosis experience,Intervention population
-3,Methods,Psychosis subgroup ( treatment-resistant),Category,GMHO:0000102,treatment-resistant clinical history,A clinical history in which a person has an inadequate response to at least two adequate rials of antipsychotic drugs.,clinical history,Intervention population
+3,Methods,Psychosis subgroup ( treatment-resistant),Category,GMHO:0000102,treatment-resistant clinical history,A clinical history in which a person has an inadequate response to at least two adequate trials of antipsychotic drugs.,clinical history,Intervention population
 3,Methods,Psychosis subgroup (predominant negative symptoms),Category,GMHO:0000096,predominant negative psychotic disorder symptom history,A clinical history in which a person has more negative than psychotic disorder symptoms.,clinical history,Intervention population
 3,Methods,Comorbidities,Category,OMIABIS:0001008,comorbidity,A diagnosis that is the outcome of a diagnostic process targeting a second or additional health problem.,diagnosis,Intervention population
 3,Methods,Other concomitant medications,Category,BCIO:015490,medication use status,"A health status attribute that is having been prescribed the use of one or more drugs to improve, maintain or protect one's health.",health status attribute,Intervention population
@@ -437,7 +437,7 @@ structural,,,,BCIO:026039,factory facility,A facility of a building or group of 
 structural,,,,ENVO:00000111,forest,An area with a high density of trees. A small forest may be called a wood,outdoor environment,
 structural,,,,GAZ:00000448,geographical location,"A reference to a place on the Earth, by its name or by its geographical location",spatial region,
 structural,,,,ENVO:00000106,grassland,An area in which grasses (Graminae) are a significant component of the vegetation,outdoor environment,
-structural,,,,OMRSE:00000102,healthcare facility,A facility that�s administered by a health care organisation for the purpose of providing health care to a patient population,facility,
+structural,,,,OMRSE:00000102,healthcare facility,A facility that is administered by a health care organisation for the purpose of providing health care to a patient population,facility,
 structural,,,,BCIO:026040,military facility,A facility relating to or characteristic of soldiers or armed forces ,facility,
 structural,,,,BCIO:026044,mobile intervention venue,A form of transportation delivering interventions in transient locations.,transportation,
 structural,,,,BFO:0000027,object aggregate,b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists.,material entity,
