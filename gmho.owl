@@ -18,7 +18,7 @@
      xmlns:ontologies="https://galenos.org.uk/ontologies/"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="https://galenos.org.uk/ontologies/gmho.owl">
-        <owl:versionIRI rdf:resource="https://galenos.org.uk/ontologies/gmho.owl/2024-07-30"/>
+        <owl:versionIRI rdf:resource="https://galenos.org.uk/ontologies/gmho.owl/2024-07-31"/>
     </owl:Ontology>
     
 
@@ -543,7 +543,6 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
         <rdfs:label>database_cross_reference</rdfs:label>
-        <rdfs:label xml:lang="en">has database cross reference</rdfs:label>
     </owl:AnnotationProperty>
     
 
