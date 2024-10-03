@@ -3,7 +3,7 @@ Extraction sheet name,Data file (doi),LSR no.,Extraction sheet dimension,Variabl
 ,,1,Study identification,year,Numerical,GMHO:0000120,publication year textual entity,A textual entity documenting the year in which some study was published.,textual entity,Research methods,,Yes
 ,,1,Methods,n_randomised,Numerical,GMHO:0000154,number of randomised intervention participants,Number of intervention participants who were randomly allocated to study arms within an intervention.,number of intervention participants,Intervention population,,Yes
 ,,1,Population,age_mean,Mean age,BCIO:015177,mean human age,The mean of human age in a population.,aggregate human age,Intervention population,,Yes
-,,1,Population,female_n,Number of females in study,number of female biological sex,The number of female biological sex in a population.,female biological sex population statistic,,,,Yes
+,,1,Population,female_n,Number of females in study,NEW/Potential class,number of female biological sex,The number of female biological sex in a population.,female biological sex population statistic,,,Yes
 ,,1,Intervention,treatment_details,Treatment details,GMHO:0000004,intervention arm name,A written name intended to identify a particular intervention arm. ,written name,Intervention content and delivery,,Yes
 ,,1,Intervention,Drug name,Free text,GMHO:0000002,drug name,A written name intended to identify a particular drug. ,written name,Intervention content and delivery,,Yes
 ,,1,Intervention,dose_delivered_min,Minimum drug dose delivered,GMHO:0000001,dose of pharmacological substance,Dose of pharmacological substance delivered to an individual.,dose,Intervention content and delivery,,Yes
