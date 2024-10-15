@@ -559,3 +559,4 @@ LSR3_taar1_H/data/data_2024-01-22_LSR3_H.xlsx,https://doi.org/10.5281/zenodo.108
 ,,structural,,,,OBCS:0000011,measurement scale,"An information content entity that represents a type of scale on which a variable is measured, including nominal, ordinal, interval, ratio.",information content entity,
 ,,structural,,,,BCIO:015415,human age population statistic,The aggregate of human age in a population.,data item,
 ,,,,,,,,,,
+,,structural,,,,IAO:0000030,textual entity,"A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc.",information content entity,
