@@ -597,3 +597,7 @@ LSR3_taar1_H/data/data_2024-01-22_LSR3_H.xlsx,https://doi.org/10.5281/zenodo.108
 ,,2,,tg1PTSD3PTsd,Standard deviation of PTSD symptom severity of the treatment group,OBCS:0000077,standard deviation,A quantitative confidence value that measures the variability of data around the mean.,quantitative confidence value,
 ,,2,,tg1PTSD3PTsd,Standard deviation of PTSD symptom severity of the treatment group,GMHO:0000123,intervention arm,A study arm that is subject to evaluation in an intervention evaluation study.,study arm,
 ,,2,,tg1PTSD3PTsd,Standard deviation of PTSD symptom severity of the treatment group,GMHO:0000204,measurement datum at followup,Measurement datum that was recorded as followup data in a study.,measurement datum,
+,,2,,tg2PTSD3PTn,Sample size of PTSD symptom severity of the control group,GMHO:0000173,post-traumatic stress symptom severity,,,
+,,2,,tg2PTSD3PTn,Sample size of PTSD symptom severity of the control group,GMHO:0000206,number of participants with measurement,Number of intervention participants for whom a measurement was made.,number of intervention participants,
+,,2,,tg2PTSD3PTn,Sample size of PTSD symptom severity of the control group,GMHO:0000122,control arm,A study arm designation as a comparator to some intervention arm.,study arm,
+,,2,,tg2PTSD3PTn,Sample size of PTSD symptom severity of the control group,GMHO:0000204,measurement datum at followup,Measurement datum that was recorded as followup data in a study.,measurement datum,
