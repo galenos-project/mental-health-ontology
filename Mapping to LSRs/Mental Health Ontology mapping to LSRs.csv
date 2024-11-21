@@ -585,3 +585,8 @@ LSR3_taar1_H/data/data_2024-01-22_LSR3_H.xlsx,https://doi.org/10.5281/zenodo.108
 ,,2,,tg2Ndrop,Number of participants who dropped out of study arm (control group),GMHO:0000122,control arm,A study arm designation as a comparator to some intervention arm.,study arm,Intervention content and delivery
 ,,2,,tg2Nrandom,Number of intervention participants randomly allocated to an arm,GMHO:0000154,number of randomised intervention participants,Number of intervention participants who were randomly allocated to study arms within an intervention.,number of intervention participants,Intervention population
 ,,2,,tg2Nrandom,Number of intervention participants randomly allocated to an arm,GMHO:0000122,control arm,A study arm designation as a comparator to some intervention arm.,study arm,Intervention content and delivery
+,,2,,tg1PTSD3PTm,Mean PTSD symptom severity of the treatment group,GMHO:0000173,post-traumatic stress symptom severity,,,
+,,2,,tg1PTSD3PTm,Mean PTSD symptom severity of the treatment group,OBI:0000679,average value,A data item that is produced as the output of an averaging data transformation and represents the average value of the input data.,data item,
+,,2,,tg1PTSD3PTm,Mean PTSD symptom severity of the treatment group,GMHO:0000123,intervention arm,A study arm that is subject to evaluation in an intervention evaluation study.,study arm,
+,,2,,tg1PTSD3PTm,Mean PTSD symptom severity of the treatment group,GMHO:0000204,measurement datum at followup,Measurement datum that was recorded as followup data in a study.,measurement datum,
+,,,,,,,,,,
