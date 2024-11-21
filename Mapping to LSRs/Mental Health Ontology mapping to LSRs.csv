@@ -569,3 +569,4 @@ LSR3_taar1_H/data/data_2024-01-22_LSR3_H.xlsx,https://doi.org/10.5281/zenodo.108
 ,,2,,tg1specEX2,Type of exercise carried out in the intervention arm,GMHO:0000123,intervention arm,A study arm that is subject to evaluation in an intervention evaluation study.,study arm,Intervention content and delivery
 ,,2,,Intervention,Intervention details,GMHO:0000125,intervention content,A planned process that is part of an intervention and is intended to be causally active in influencing its target outcome or outcomes.,planned process,Intervention content and delivery
 ,,2,,Intervention,Intervention details,GMHO:0000123,intervention arm,A study arm that is subject to evaluation in an intervention evaluation study.,study arm,Intervention content and delivery
+,,2,,Comparison,Control group details,GMHO:0000122,control arm,A study arm designation as a comparator to some intervention arm.,study arm,
