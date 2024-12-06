@@ -518,7 +518,6 @@ LSR3_taar1_H/data/data_2024-01-22_LSR3_H.xlsx,https://doi.org/10.5281/zenodo.108
 ,,structural,,,,IAO:0000104 ,plan specification,"A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.",directive information entity,
 ,,structural,,,,OBI:0000011,planned process,A process that realizes a plan which is the concretization of a plan specification.,process,
 ,,structural,,,,GMHO:0000077,positive psychotic disorder symptom,"A psychotic disorder symptom that is characterized by the presence of hallucinations, delusions, or disorganised thoughts or behaviours.",psychotic disorder symptom,
-,,structural,,,,GMHO:0000155,post-traumatic stress disorder diagnosis severity,Diagnosis severity relating to a post-traumatic stress disorder diagnosis.,anxiety diagnosis severity,
 ,,structural,,,,GMHO:0000174,post-traumatic stress symptom,An anxiety symptom that is related to a post-traumatic stress disorder diagnosis.,anxiety symptom,
 ,,structural,,,,STATO:0000412,prevalence ,prevalence is a ratio formed by the number of subjects diagnosed with a disease divided by the total population size.,ratio,
 ,,structural,,,,GMHO:0000166,prevalence of diagnosis,Prevalence of people diagnosed with a specific disorder.,prevalence,
