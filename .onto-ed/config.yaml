@@ -50,6 +50,6 @@ prefixes:
   STATO: http://purl.obolibrary.org/obo/STATO_
   UBERON: http://purl.obolibrary.org/obo/UBERON_
 release_file: gmho.owl
-release_script_path: gmho.release.json
+release_script_path: .onto-ed/release_script.json
 short_name: GMHO
 subontologies: {}
