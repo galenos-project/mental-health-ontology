@@ -1,253 +1,102 @@
 {
-  "iri_prefix": "http://humanbehaviourchange.org/ontology/",
-  "short_repository_name": "BCIO",
-  "full_repository_name": "b-gehrke/ontologies",
+  "iri_prefix": "https://galenos.org.uk/ontologies/",
+  "short_repository_name": "GMHO",
+  "full_repository_name": "galenos-project/mental-health-ontology",
   "external": {
     "sources": [
       {
-        "file": "Upper Level BCIO/inputs/BCIO_External_Imports.xlsx",
+        "file": "UpperLevel/GMHO_External_Imports.xlsx",
         "type": "classes"
       }
     ],
     "target": {
-      "file": "Upper Level BCIO/bcio_external.owl",
-      "iri": "http://humanbehaviourchange.org/ontology/bcio_external.owl",
+      "file": "UpperLevel/gmho_external.owl",
+      "iri": "https://galenos.org.uk/ontologies/gmho_external.owl",
       "ontology_annotations": {}
     },
-    "needs": [],
-    "renameTermFile": null,
-    "addParentsFile": "Upper Level BCIO/inputs/BCIO_External_Imports_New_Parents.csv"
+    "needs": []
   },
   "files": {
-    "bcio": {
+    "gmho": {
       "sources": [
         {
-          "file": "Setting/bcio_setting.owl",
-          "type": "owl"
-        },
-        {
-          "file": "ModeOfDelivery/bcio_mode_of_delivery.owl",
-          "type": "owl"
-        },
-        {
-          "file": "Source/bcio_source.owl",
-          "type": "owl"
-        },
-        {
-          "file": "MechanismOfAction/bcio_moa.owl",
-          "type": "owl"
-        },
-        {
-          "file": "Behaviour/bcio_behaviour.owl",
-          "type": "owl"
-        },
-        {
-          "file": "BehaviourChangeTechniques/bcto.owl",
-          "type": "owl"
-        },
-        {
-          "file": "StyleOfDelivery/bcio_style.owl",
-          "type": "owl"
-        }
-      ],
-      "target": {
-        "file": "bcio.owl",
-        "iri": "http://humanbehaviourchange.org/ontology/bcio.owl",
-        "ontology_annotations": {
-          "dc:title": "Behaviour Change Intervention Ontology",
-          "rdfs:comment": "The Behaviour Change Intervention Ontology (BCIO) is an ontology for all aspects of human behaviour change interventions and their evaluation. It is being developed as a part of the Human Behaviour Change Project (http://www.humanbehaviourchange.org). The BCIO is developed across several modules. This ontology file contains the merged version of the BCIO, encompassing the upper level and the modules for Setting, Mode of Delivery, Style of Delivery, Source, Mechanisms of Action, Behaviour and Behaviour Change Techniques. Additional modules will be added soon."
-        }
-      },
-      "needs": [],
-      "renameTermFile": null,
-      "addParentsFile": null
-    },
-    "bcio_behaviour": {
-      "sources": [
-        {
-          "file": "Behaviour/bcio_behaviour.xlsx",
-          "type": "classes"
-        }
-      ],
-      "target": {
-        "file": "Behaviour/bcio_behaviour.owl",
-        "iri": "http://humanbehaviourchange.org/ontology/bcio_behaviour.owl",
-        "ontology_annotations": {}
-      },
-      "needs": [
-        "bcio_population",
-        "upper"
-      ],
-      "renameTermFile": null,
-      "addParentsFile": null
-    },
-    "bcio_moa": {
-      "sources": [
-        {
-          "file": "MechanismOfAction/bcio_moa.xlsx",
-          "type": "classes"
-        }
-      ],
-      "target": {
-        "file": "MechanismOfAction/bcio_moa.owl",
-        "iri": "http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl",
-        "ontology_annotations": {}
-      },
-      "needs": [
-        "bcio_behaviour",
-        "bcio_population",
-        "upper"
-      ],
-      "renameTermFile": null,
-      "addParentsFile": null
-    },
-    "bcio_mode_of_delivery": {
-      "sources": [
-        {
-          "file": "ModeOfDelivery/bcio_mode_of_delivery.xlsx",
-          "type": "classes"
-        }
-      ],
-      "target": {
-        "file": "ModeOfDelivery/bcio_mode_of_delivery.owl",
-        "iri": "http://humanbehaviourchange.org/ontology/bcio_mode_of_delivery.owl",
-        "ontology_annotations": {}
-      },
-      "needs": [
-        "upper"
-      ],
-      "renameTermFile": null,
-      "addParentsFile": null
-    },
-    "bcio_population": {
-      "sources": [
-        {
-          "file": "Population/BCIO_Population_Expanded.xlsx",
-          "type": "classes"
-        }
-      ],
-      "target": {
-        "file": "Population/bcio_population.owl",
-        "iri": "http://humanbehaviourchange.org/ontology/Population/bcio_population.owl",
-        "ontology_annotations": {}
-      },
-      "needs": [
-        "upper"
-      ],
-      "renameTermFile": null,
-      "addParentsFile": null
-    },
-    "bcio_schedule": {
-      "sources": [
-        {
-          "file": "Schedule/BCIO_Schedule.xlsx",
-          "type": "classes"
-        }
-      ],
-      "target": {
-        "file": "Schedule/bcio_schedule.owl",
-        "iri": "http://humanbehaviourchange.org/ontology/Schedule/bcio_schedule.owl",
-        "ontology_annotations": {}
-      },
-      "needs": [
-        "upper"
-      ],
-      "renameTermFile": null,
-      "addParentsFile": null
-    },
-    "bcio_setting": {
-      "sources": [
-        {
-          "file": "Setting/bcio_setting.xlsx",
-          "type": "classes"
-        }
-      ],
-      "target": {
-        "file": "Setting/bcio_setting.owl",
-        "iri": "http://humanbehaviourchange.org/ontology/bcio_setting.owl",
-        "ontology_annotations": {}
-      },
-      "needs": [
-        "upper"
-      ],
-      "renameTermFile": null,
-      "addParentsFile": null
-    },
-    "bcio_source": {
-      "sources": [
-        {
-          "file": "Source/bcio_source.xlsx",
-          "type": "classes"
-        }
-      ],
-      "target": {
-        "file": "Source/bcio_source.owl",
-        "iri": "http://humanbehaviourchange.org/ontology/bcio_source.owl",
-        "ontology_annotations": {}
-      },
-      "needs": [
-        "upper"
-      ],
-      "renameTermFile": null,
-      "addParentsFile": null
-    },
-    "bcio_style": {
-      "sources": [
-        {
-          "file": "StyleOfDelivery/bcio_style.xlsx",
-          "type": "classes"
-        }
-      ],
-      "target": {
-        "file": "StyleOfDelivery/bcio_style.owl",
-        "iri": "http://humanbehaviourchange.org/ontology/bcio_style.owl",
-        "ontology_annotations": {}
-      },
-      "needs": [
-        "upper",
-        "bcio_behaviour",
-        "bcio_population"
-      ],
-      "renameTermFile": null,
-      "addParentsFile": null
-    },
-    "bcto": {
-      "sources": [
-        {
-          "file": "BehaviourChangeTechniques/bcto.xlsx",
-          "type": "classes"
-        }
-      ],
-      "target": {
-        "file": "BehaviourChangeTechniques/bcto.owl",
-        "iri": "http://humanbehaviourchange.org/ontology/bcto.owl",
-        "ontology_annotations": {}
-      },
-      "needs": [
-        "upper"
-      ],
-      "renameTermFile": null,
-      "addParentsFile": null
-    },
-    "upper": {
-      "sources": [
-        {
-          "file": "Upper Level BCIO/inputs/BCIO_Upper_Defs.xlsx",
+          "file": "Intervention setting/Intervention setting.xlsx",
           "type": "classes"
         },
         {
-          "file": "Upper Level BCIO/inputs/BCIO_Upper_Rels.xlsx",
+          "file": "Intervention content and delivery/Intervention content and delivery.xlsx",
+          "type": "classes"
+        },
+        {
+          "file": "Intervention outcomes and spillover effects/Intervention outcomes and spillover effects.xlsx",
+          "type": "classes"
+        },
+        {
+          "file": "Research methods/Research methods.xlsx",
+          "type": "classes"
+        },
+        {
+          "file": "Intervention population/Intervention population.xlsx",
+          "type": "classes"
+        },
+        {
+          "file": "Non-GMHO entities mapped to LSRs/Non-GMHO entities mapped to LSRs.xlsx",
+          "type": "classes"
+        },
+        {
+          "file": "Intervention mechanism/Intervention mechanism of action.xlsx",
+          "type": "classes"
+        },
+        {
+          "file": "Temporary entity spreadsheet/Temporary entity spreadsheet.xlsx",
+          "type": "classes"
+        }
+      ],
+      "target": {
+        "file": "gmho_with_imports.owl",
+        "iri": "https://galenos.org.uk/ontologies/gmho_with_imports.owl",
+        "ontology_annotations": {},
+        "publish": false
+      },
+      "needs": [
+        "gmho_upper"
+      ]
+    },
+    "gmho_final": {
+      "sources": [
+        {
+          "file": "gmho_with_imports.owl",
+          "type": "owl"
+        },
+        {
+          "file": "gmho_upper.owl",
+          "type": "owl"
+        }
+      ],
+      "target": {
+        "file": "gmho.owl",
+        "iri": "https://galenos.org.uk/ontologies/gmho.owl",
+        "ontology_annotations": {}
+      },
+      "needs": []
+    },
+    "gmho_upper": {
+      "sources": [
+        {
+          "file": "UpperLevel/GMHO_Upper_Rels.xlsx",
           "type": "relations"
+        },
+        {
+          "file": "UpperLevel/GMHO_Upper_Defs.xlsx",
+          "type": "classes"
         }
       ],
       "target": {
-        "file": "Upper Level BCIO/bcio_upper_level.owl",
-        "iri": "http://humanbehaviourchange.org/ontology/bcio_upper_level.owl",
+        "file": "gmho_upper.owl",
+        "iri": "https://galenos.org.uk/ontologies/gmho_upper.owl",
         "ontology_annotations": {}
       },
-      "needs": [],
-      "renameTermFile": null,
-      "addParentsFile": null
+      "needs": []
     }
   },
   "steps": [
@@ -276,22 +125,6 @@
       "args": {}
     },
     {
-      "name": "BCIO_SEARCH",
-      "args": {
-        "included_files": [
-          "upper",
-          "bcio_setting",
-          "bcio_mode_of_delivery",
-          "bcio_source",
-          "bcio_moa",
-          "bcio_behaviour",
-          "bcto",
-          "bcio_style",
-          "bcio_population"
-        ]
-      }
-    },
-    {
       "name": "GITHUB_PUBLISH",
       "args": {}
     }
@@ -299,7 +132,8 @@
   "prefixes": {
     "ADDICTO": "http://addictovocab.org/ADDICTO_",
     "BCIO": "http://humanbehaviourchange.org/ontology/BCIO_",
-    "BCIOR": "http://humanbehaviourchange.org/ontology/BCIOR_",
-    "SDGIO": "http://purl.unep.org/sdg/SDGIO_"
+    "EFO": "http://www.ebi.ac.uk/efo/EFO_",
+    "GMHO": "https://galenos.org.uk/ontologies/GMHO_",
+    "GMHOR": "https://galenos.org.uk/ontologies/GMHOR_"
   }
 }
