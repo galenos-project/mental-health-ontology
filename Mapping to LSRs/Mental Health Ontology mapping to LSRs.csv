@@ -613,3 +613,4 @@ LSR3_taar1_H/data/data_2024-01-22_LSR3_H.xlsx,https://doi.org/10.5281/zenodo.108
 ,,2,,RoB PTSD symptom severity,Risk of bias associated with measurement of PTSD outcome data,GMHO:0000173,post-traumatic stress symptom severity,Symptom severity relating to a post-traumatic stress symptom.,symptom severity,Intervention outcomes and spillover effects
 ,,structural,,,,BCIO:050435,behavioural attribute,A process attribute of an individual human behaviour.,process attribute,Intervention content and delivery
 ,,structural,,,,GMHO:0000241,mental health intervention content,An intervention content that is part of a mental health intervention.,intervention content,Any intervention content delivered in the context of a mental health intervention.
+,,structural,,,,BCIO:041000,human population,An object aggregate that consists of two or more people.,object aggregate,
