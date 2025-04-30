@@ -1,4 +1,4 @@
-- key: Population Test
+- key: Population
   children:
   - key: BCIO:015416
     variables:
