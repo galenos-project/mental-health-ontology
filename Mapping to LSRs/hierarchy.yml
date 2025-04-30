@@ -1,6 +1,5 @@
 - key: Population
   children:
-  Test error
   - key: BCIO:015416
     variables:
     - Mean age
