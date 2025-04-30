@@ -1,4 +1,4 @@
-- key: Population
+- key: Population (from GitHub)
   children:
   - key: BCIO:015416
     variables:
