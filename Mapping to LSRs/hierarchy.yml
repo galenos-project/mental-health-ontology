@@ -311,7 +311,7 @@
           - Intervention duration (unit)
     - key: GMHO:0000244
     - key: GMHO:0000246
-- key: Outcome
+- key: Baseline and Outcome Measures
   children:
   - key: GMHO:0000047,GMHO:0000204
     variables:
