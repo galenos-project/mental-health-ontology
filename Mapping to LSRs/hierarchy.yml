@@ -894,59 +894,60 @@
         - Post-traumatic stress disorder scale
 - key: Research methods
   children:
-  - key: GMHO:0000120
-    variables:
-    - Year of publication
-  - key: GMHO:0000211
-    variables:
-    - Study identifier
-  - key: GMHO:0000127
-    variables:
-    - Study Arm
+  - key: Study information
     children:
-    - key: GMHO:0000122
+    - key: GMHO:0000127
+      variables:
+      - Study Arm
       children:
-      - key: GMHO:0000128
-        variables:
-        - Treatment as usual
-      - key: GMHO:0000240
-        variables:
-        - Attention management control arm
-  - key: GMHO:0000216
-    variables:
-    - Overall risk of bias score (RoB2)
-    children:
-    - key: GMHO:0000215
-      variables:
-      - Risk of bias associated with allocation (Domain 1 RoB2)
-    - key: GMHO:0000217
-      variables:
-      - Risk of bias associated with intervention (Domain 2 RoB2)
-    - key: GMHO:0000219
-      variables:
-      - Risk of bias associated with missing outcome data (Domain 3 RoB2)
-    - key: GMHO:0000218
-      variables:
-      - Risk of bias associated with measurement of PTSD outcome data
-      - Risk of bias associated with measurement of outcome data (Domain 4 RoB2)
+      - key: GMHO:0000122
+        children:
+        - key: GMHO:0000128
+          variables:
+          - Treatment as usual
+        - key: GMHO:0000240
+          variables:
+          - Attention management control arm
+    - key: OBI:0500000
       children:
-      - key: GMHO:0000173
+      - key: ADDICTO:0001267
+        variables:
+        - Study design
+    - key: GMHO:0000237
+      variables:
+      - Number of crossover periods
+    - key: GMHO:0000216
+      variables:
+      - Overall risk of bias score (RoB2)
+      children:
+      - key: GMHO:0000215
+        variables:
+        - Risk of bias associated with allocation (Domain 1 RoB2)
+      - key: GMHO:0000217
+        variables:
+        - Risk of bias associated with intervention (Domain 2 RoB2)
+      - key: GMHO:0000219
+        variables:
+        - Risk of bias associated with missing outcome data (Domain 3 RoB2)
+      - key: GMHO:0000218
         variables:
         - Risk of bias associated with measurement of PTSD outcome data
-    - key: GMHO:0000220
+        - Risk of bias associated with measurement of outcome data (Domain 4 RoB2)
+        children:
+        - key: GMHO:0000173
+          variables:
+          - Risk of bias associated with measurement of PTSD outcome data
+      - key: GMHO:0000220
+        variables:
+        - Risk of bias associated with selective outcome reporting (Domain 5 RoB2)
+  - key: Publication information
+    children: 
+    - key: GMHO:0000120
       variables:
-      - Risk of bias associated with selective outcome reporting (Domain 5 RoB2)
-  - key: GMHO:0000138
-    variables:
-    - Timepoint of measurement
-  - key: GMHO:0000237
-    variables:
-    - Number of crossover periods
-  - key: OBI:0500000
-    children:
-    - key: ADDICTO:0001267
+      - Year of publication
+    - key: GMHO:0000211
       variables:
-      - Study design
-  - key: GMHO:0000261
-    variables:
-    - DOI of study
+      - Study identifier
+    - key: GMHO:0000261
+      variables:
+      - DOI of study
