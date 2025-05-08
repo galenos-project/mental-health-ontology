@@ -38,13 +38,13 @@
     - key: GMHO:0000154
       variables:
       - Number of intervention participants allocated to an arm
-   - key: BCIO:015092
-     variables:
-     - Mental health status
-     children:
-     - key: GMHO:0000255
-       variables:
-       - Severity of condition  
+  - key: BCIO:015092
+    variables:
+    - Mental health status
+    children:
+    - key: GMHO:0000255
+      variables:
+      - Severity of condition  
 - key: Intervention
   children:
   - key: GMHO:0000241
