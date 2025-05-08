@@ -269,7 +269,7 @@
         - key: STATO:0000150
           variables:
           - Minimum drug dose delivered (milligrams)
-      - key: GMHO: GMHO:0000260,0000001
+      - key: GMHO: GMHO:0000001,0000260
         variables:
         - Maximum planned drug dose (milligrams)
         - Minimum planned drug dose (milligrams)
