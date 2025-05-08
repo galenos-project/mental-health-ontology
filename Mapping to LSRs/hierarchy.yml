@@ -933,10 +933,6 @@
         variables:
         - Risk of bias associated with measurement of PTSD outcome data
         - Risk of bias associated with measurement of outcome data (Domain 4 RoB2)
-        children:
-        - key: GMHO:0000173
-          variables:
-          - Risk of bias associated with measurement of PTSD outcome data
       - key: GMHO:0000220
         variables:
         - Risk of bias associated with selective outcome reporting (Domain 5 RoB2)
