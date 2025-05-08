@@ -40,7 +40,7 @@
       - Number of intervention participants allocated to an arm
    - key: BCIO:015092
      variables:
-     - Intervention population
+     - Mental health status
      children:
      - key: GMHO:0000255
        variables:
