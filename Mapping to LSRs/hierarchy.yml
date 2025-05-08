@@ -12,11 +12,11 @@
         - key: BCIO:015329
           variables:
           - Proportion of female
-      - key: BCIO:015415
-        children:
-        - key: BCIO:015416
-          variables:
-          - Mean age
+    - key: BCIO:015415
+      children:
+      - key: BCIO:015416
+        variables:
+        - Mean age
   - key: GMHO:0000152
     variables:
     - Total number of intervention participants
