@@ -253,8 +253,6 @@
       variables:
       - Type of psychological treatment
     - key: GMHO:0000242
-      variables:
-      - Intensity of physical activity intervention
       children:
       - key: GMHO:0000001
         variables:
@@ -271,7 +269,7 @@
         - key: STATO:0000150
           variables:
           - Minimum drug dose delivered (milligrams)
-      - key: GMHO:0000001,GMHO:0000260
+      - key: GMHO: GMHO:0000260,0000001
         variables:
         - Maximum planned drug dose (milligrams)
         - Minimum planned drug dose (milligrams)
@@ -282,21 +280,13 @@
         - key: STATO:0000150
           variables:
           - Minimum planned drug dose (milligrams)
-      - key: GMHO:0000264
+      - key: GMHO:0000265
         variables:
         - Intensity of physical activity intervention
     - key: GMHO:0000247
-      children:
-      - key: BCIO:036042
-        variables:
-        - Type of exercise delivered in the intervention arm
-        children:
-        - key: GMHO:0000123
-          variables:
-          - Type of exercise delivered in the intervention arm
     - key: GMHO:0000264
       variables:
-      - Exercise
+      - Type of exercise delivered in the intervention arm
   - key: BCIO:045000
     children:
     - key: GMHO:0000245
