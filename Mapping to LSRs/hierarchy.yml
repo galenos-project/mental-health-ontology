@@ -1,8 +1,113 @@
 - key: Population
   children:
-  - key: BCIO:015416
+  - key: population characteristic
+    children: 
+    - key: BCIO:015249
+      children:
+      - key: BCIO:015327
+        children:
+        - key: GMHO:0000213
+          variables:
+          - Number of female participants
+        - key: BCIO:015329
+          variables:
+          - Proportion of female
+      - key: BCIO:015415
+        children:
+        - key: BCIO:015416
+          variables:
+          - Mean age
+  - key: GMHO:0000152
     variables:
-    - Mean age
+    - Total number of intervention participants
+    children:
+    - key: GMHO:0000075
+      variables:
+      - Number of participants who dropped out of study
+      children:
+      - key: GMHO:0000072
+        variables:
+        - Number of participants who dropped out of study due to adverse events
+        children:
+         - key: GMHO:0000258
+           variables:
+           - Number of participants for whom drop out due to adverse events was assessed
+      - key: GMHO:0000258
+        variables:
+        - Number of participants for whom drop out was assessed
+    - key: GMHO:0000154
+      variables:
+      - Number of intervention participants allocated to an arm
+   - key: BCIO:015092
+     variables:
+     - Intervention population
+     children:
+     - key: GMHO:0000255
+       variables:
+       - Severity of condition  
+- key: Intervention
+  children:
+  - key: GMHO:0000241
+    variables:
+    - Intervention details
+    children:
+    - key: GMHO:0000262
+      variables:
+      - Pharmacological treatment delivered
+    - key: GMHO:0000239
+      variables:
+      - Type of psychological treatment
+    - key: GMHO:0000242
+      children:
+      - key: GMHO:0000001
+        variables:
+        - Maximum drug dose delivered (milligrams)
+        - Mean drug dose delivered (milligrams)
+        - Minimum drug dose delivered (milligrams)
+        children:
+        - key: OBI:0000679
+          variables:
+          - Mean drug dose delivered (milligrams)
+        - key: STATO:0000151
+          variables:
+          - Maximum drug dose delivered (milligrams)
+        - key: STATO:0000150
+          variables:
+          - Minimum drug dose delivered (milligrams)
+      - key: GMHO:0000001,GMHO:0000260
+        variables:
+        - Maximum planned drug dose (milligrams)
+        - Minimum planned drug dose (milligrams)
+        children:
+        - key: STATO:0000151
+          variables:
+          - Maximum planned drug dose (milligrams)
+        - key: STATO:0000150
+          variables:
+          - Minimum planned drug dose (milligrams)
+      - key: GMHO:0000265
+        variables:
+        - Intensity of physical activity intervention
+    - key: GMHO:0000247
+    - key: GMHO:0000264
+      variables:
+      - Type of exercise delivered in the intervention arm
+  - key: BCIO:045000
+    children:
+    - key: GMHO:0000245
+      children:
+      - key: GMHO:0000005
+        variables:
+        - Intervention duration (numeric value)
+        - Intervention duration (unit)
+        children:
+        - key: IAO:0000003
+          variables:
+          - Intervention duration (unit)
+    - key: GMHO:0000244
+    - key: GMHO:0000246
+- key: Baseline and Outcome Measures
+  children:
   - key: GMHO:0000135,GMHO:0000209
     variables:
     - Mean baseline reward sensitivity
@@ -25,33 +130,7 @@
       - Number of participants with baseline evaluation on reward sensitivity
     - key: OBCS:0000077
       variables:
-      - Standard deviation of baseline reward sensitivity
-  - key: BCIO:015092
-    variables:
-    - Intervention population
-  - key: GMHO:0000255
-    variables:
-    - Severity of condition
-  - key: GMHO:0000152
-    variables:
-    - Total number of intervention participants
-    children:
-    - key: GMHO:0000075
-      variables:
-      - Number of participants who dropped out of study
-      children:
-      - key: GMHO:0000072
-        variables:
-        - Number of participants who dropped out of study due to adverse events
-      - key: GMHO:0000258
-        variables:
-        - Number of participants for whom drop out was assessed
-    - key: GMHO:0000154
-      variables:
-      - Number of intervention participants allocated to an arm
-    - key: GMHO:0000258
-      variables:
-      - Number of participants for whom drop out due to adverse events was assessed
+      - Standard deviation of baseline reward sensitivity  
   - key: GMHO:0000067,GMHO:0000209
     variables:
     - Mean baseline functioning
@@ -101,14 +180,6 @@
     - key: GMHO:0000206
       variables:
       - Number of participants with baseline evaluation of prolactin
-  - key: BCIO:015327
-    children:
-    - key: GMHO:0000213
-      variables:
-      - Number of female participants
-    - key: BCIO:015329
-      variables:
-      - Proportion of female
   - key: GMHO:0000087 (Population)
     children:
     - key: GMHO:0000131,GMHO:0000209
@@ -240,69 +311,6 @@
       - key: GMHO:0000263
         variables:
         - Post-traumatic stress disorder scale
-- key: Intervention
-  children:
-  - key: GMHO:0000241
-    variables:
-    - Intervention details
-    children:
-    - key: GMHO:0000262
-      variables:
-      - Pharmacological treatment delivered
-    - key: GMHO:0000239
-      variables:
-      - Type of psychological treatment
-    - key: GMHO:0000242
-      children:
-      - key: GMHO:0000001
-        variables:
-        - Maximum drug dose delivered (milligrams)
-        - Mean drug dose delivered (milligrams)
-        - Minimum drug dose delivered (milligrams)
-        children:
-        - key: OBI:0000679
-          variables:
-          - Mean drug dose delivered (milligrams)
-        - key: STATO:0000151
-          variables:
-          - Maximum drug dose delivered (milligrams)
-        - key: STATO:0000150
-          variables:
-          - Minimum drug dose delivered (milligrams)
-      - key: GMHO:0000001,GMHO:0000260
-        variables:
-        - Maximum planned drug dose (milligrams)
-        - Minimum planned drug dose (milligrams)
-        children:
-        - key: STATO:0000151
-          variables:
-          - Maximum planned drug dose (milligrams)
-        - key: STATO:0000150
-          variables:
-          - Minimum planned drug dose (milligrams)
-      - key: GMHO:0000265
-        variables:
-        - Intensity of physical activity intervention
-    - key: GMHO:0000247
-    - key: GMHO:0000264
-      variables:
-      - Type of exercise delivered in the intervention arm
-  - key: BCIO:045000
-    children:
-    - key: GMHO:0000245
-      children:
-      - key: GMHO:0000005
-        variables:
-        - Intervention duration (numeric value)
-        - Intervention duration (unit)
-        children:
-        - key: IAO:0000003
-          variables:
-          - Intervention duration (unit)
-    - key: GMHO:0000244
-    - key: GMHO:0000246
-- key: Baseline and Outcome Measures
-  children:
   - key: GMHO:0000047,GMHO:0000204
     variables:
     - Adverse event
