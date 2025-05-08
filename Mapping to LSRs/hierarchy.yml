@@ -493,20 +493,16 @@
         variables:
         - 'Data type: endpoint vs. baseline difference in psychotic disorder symptom
         severity'
-        - Mean post-intervention severity of symptoms related to psychotic disorder
-        diagnosis
-        - Number of participants with post-intervention evaluation on symptoms related
-        to psychotic disorder diagnosis
-        - Standard deviation of post-intervention severity of symptoms related to psychotic
-        disorder diagnosis
+        - Mean post-intervention severity of symptoms related to psychotic disorder diagnosis
+        - Number of participants with post-intervention evaluation on symptoms related to psychotic disorder diagnosis
+        - Standard deviation of post-intervention severity of symptoms related to psychotic disorder diagnosis
         children:
         - key: GMHO:0000228
           variables:
           - Scale for symptoms related to psychotic disorder diagnosis
         - key: GMHO:0000206
           variables:
-          - Number of participants with post-intervention evaluation on symptoms related
-          to psychotic disorder diagnosis
+          - Number of participants with post-intervention evaluation on symptoms related to psychotic disorder diagnosis
         - key: OBI:0000679
           variables:
           - Mean post-intervention severity of symptoms related to psychotic disorder
