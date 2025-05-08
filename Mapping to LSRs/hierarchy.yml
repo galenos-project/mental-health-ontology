@@ -559,8 +559,7 @@
           children:
           - key: OBI:0000679
             variables:
-            - Mean baseline severity of positive symptoms related to psychotic disorder
-            diagnosis
+            - Mean baseline severity of positive symptoms related to psychotic disorder diagnosis
           - key: GMHO:0000206
             variables:
             - Number of participants with baseline evaluation on positive psychotic disorder symptoms
