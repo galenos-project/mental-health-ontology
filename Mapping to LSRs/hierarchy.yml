@@ -108,6 +108,552 @@
     - key: GMHO:0000246
 - key: Baseline and Outcome Measures
   children:
+  - key: GMHO:0000047,GMHO:0000204
+    variables:
+    - Adverse event
+    - Number of participants reporting post-intervention adverse events
+    - Number of participants with post-intervention evaluation on adverse events
+    children:
+    - key: GMHO:0000179
+      variables:
+      - Number of participants reporting post-intervention dizziness
+      - Number of participants with post-intervention evaluation on dizziness
+      children:
+      - key: GMHO:0000214
+        variables:
+        - Number of participants reporting post-intervention dizziness
+      - key: GMHO:0000206
+        variables:
+        - Number of participants with post-intervention evaluation on dizziness
+    - key: GMHO:0000180
+      variables:
+      - Number of participants reporting post-intervention dry mouth
+      - Number of participants with post-intervention evaluation on dry mouth
+      children:
+      - key: GMHO:0000214
+        variables:
+        - Number of participants reporting post-intervention dry mouth
+      - key: GMHO:0000206
+        variables:
+        - Number of participants with post-intervention evaluation on dry mouth
+    - key: GMHO:0000182
+      variables:
+      - Number of participants reporting post-intervention insomnia
+      - Number of participants with post-intervention evaluation on insomnia
+      children:
+      - key: GMHO:0000214
+        variables:
+        - Number of participants reporting post-intervention insomnia
+      - key: GMHO:0000206
+        variables:
+        - Number of participants with post-intervention evaluation on insomnia
+    - key: GMHO:0000081
+      variables:
+      - Number of participants for whom serious adverse events were assessed
+      - Number of participants reporting post-intervention serious adverse events
+      children:
+      - key: GMHO:0000060
+        variables:
+        - Number of participant deaths
+        - Number of participants for whom deaths were assessed
+        children:
+        - key: GMHO:0000214
+          variables:
+          - Number of participant deaths
+        - key: GMHO:0000206
+          variables:
+          - Number of participants for whom deaths were assessed
+      - key: GMHO:0000214
+        variables:
+        - Number of participants reporting post-intervention serious adverse events
+      - key: GMHO:0000206
+        variables:
+        - Number of participants for whom serious adverse events were assessed
+    - key: GMHO:0000214
+      variables:
+      - Number of participants reporting post-intervention adverse events
+    - key: GMHO:0000206
+      variables:
+      - Number of participants with post-intervention evaluation on adverse events
+    - key: GMHO:0000221
+      variables:
+      - Number of participants reporting post-intervention anticholinergic symptom
+      - Number of participants with post-intervention evaluation on anticholinergic
+        symptom
+      children:
+      - key: GMHO:0000214
+        variables:
+        - Number of participants reporting post-intervention anticholinergic symptom
+      - key: GMHO:0000206
+        variables:
+        - Number of participants with post-intervention evaluation on anticholinergic
+          symptom
+    - key: GMHO:0000238
+      variables:
+      - Number of participants reporting post-intervention anxiety
+      - Number of participants with post-intervention evaluation on anxiety
+      children:
+      - key: GMHO:0000214
+        variables:
+        - Number of participants reporting post-intervention anxiety
+      - key: GMHO:0000206
+        variables:
+        - Number of participants with post-intervention evaluation on anxiety
+    - key: GMHO:0000229
+      variables:
+      - Number of participants reporting post-intervention sedation
+      - Number of participants with post-intervention evaluation on sedation
+      children:
+      - key: GMHO:0000214
+        variables:
+        - Number of participants reporting post-intervention sedation
+      - key: GMHO:0000206
+        variables:
+        - Number of participants with post-intervention evaluation on sedation
+    - key: GMHO:0000234
+      variables:
+      - Number of participants reporting post-intervention hyperprolactinemia
+      - Number of participants with post-intervention evaluation on hyperprolactinemia
+      children:
+      - key: GMHO:0000214
+        variables:
+        - Number of participants reporting post-intervention hyperprolactinemia
+      - key: GMHO:0000206
+        variables:
+        - Number of participants with post-intervention evaluation on hyperprolactinemia
+    - key: GMHO:0000231
+      variables:
+      - Number of participants with QTc prolongation following intervention
+      - Number of participants with post-intervention evaluation on QTc prolongation
+      children:
+      - key: GMHO:0000214
+        variables:
+        - Number of participants with QTc prolongation following intervention
+      - key: GMHO:0000206
+        variables:
+        - Number of participants with post-intervention evaluation on QTc prolongation
+    - key: GMHO:0000233
+      variables:
+      - Number of participants reporting post-intervention agitation
+      - Number of participants with post-intervention evaluation on agitation
+      children:
+      - key: GMHO:0000214
+        variables:
+        - Number of participants reporting post-intervention agitation
+      - key: GMHO:0000206
+        variables:
+        - Number of participants with post-intervention evaluation on agitation
+    - key: GMHO:0000235
+      variables:
+      - Number of participants reporting post-intervention hypotension
+      - Number of participants with post-intervention evaluation on hypotension
+      children:
+      - key: GMHO:0000214
+        variables:
+        - Number of participants reporting post-intervention hypotension
+      - key: GMHO:0000206
+        variables:
+        - Number of participants with post-intervention evaluation on hypotension
+    - key: GMHO:0000063
+      variables:
+      - Number of participants reporting post-intervention extrapyrimidal symptoms
+      - Number of participants with post-intervention evaluation on extrapyrimidal
+        symptoms
+      children:
+      - key: GMHO:0000051
+        variables:
+        - Number of participants reporting post-intervention akathisia
+        - Number of participants with post-intervention evaluation on akathisia
+        children:
+        - key: GMHO:0000214
+          variables:
+          - Number of participants reporting post-intervention akathisia
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with post-intervention evaluation on akathisia
+      - key: GMHO:0000214
+        variables:
+        - Number of participants reporting post-intervention extrapyrimidal symptoms
+      - key: GMHO:0000206
+        variables:
+        - Number of participants with post-intervention evaluation on extrapyrimidal
+          symptoms
+    - key: GMHO:0000184
+      children:
+      - key: GMHO:0000181
+        variables:
+        - Number of participants reporting post-intervention headache
+        - Number of participants with post-intervention evaluation on headache
+        children:
+        - key: GMHO:0000214
+          variables:
+          - Number of participants reporting post-intervention headache
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with post-intervention evaluation on headache
+    - key: GMHO:0000178
+      children:
+      - key: GMHO:0000257
+        variables:
+        - Number of participants reporting post-intervention constipation
+        - Number of participants with post-intervention evaluation on constipation
+        children:
+        - key: GMHO:0000214
+          variables:
+          - Number of participants reporting post-intervention constipation
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with post-intervention evaluation on constipation
+      - key: GMHO:0000183
+        variables:
+        - Number of participants reporting post-intervention nausea
+        - Number of participants with post-intervention evaluation on nausea
+        children:
+        - key: GMHO:0000214
+          variables:
+          - Number of participants reporting post-intervention nausea
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with post-intervention evaluation on nausea
+      - key: GMHO:0000185
+        variables:
+        - Number of participants reporting post-intervention vomiting
+        - Number of participants with post-intervention evaluation on vomiting
+        children:
+        - key: GMHO:0000214
+          variables:
+          - Number of participants reporting post-intervention vomiting
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with post-intervention evaluation on vomiting
+    - key: GMHO:0000038
+      children:
+      - key: GMHO:0000232
+        variables:
+        - Number of participants reporting post-intervention weight increase
+        - Number of participants with post-intervention evaluation on weight increase
+        children:
+        - key: GMHO:0000214
+          variables:
+          - Number of participants reporting post-intervention weight increase
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with post-intervention evaluation on weight increase
+  - key: GMHO:0000087
+    children:
+    - key: GMHO:0000131
+      children:
+      - key: GMHO:0000209
+        variables:
+        - Mean baseline anhedonia
+        - Number of participants with baseline evaluation on anhedonia
+        - Standard deviation of baseline anhedonia
+        children:
+        - key: OBI:0000679
+          variables:
+          - Mean baseline anhedonia
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with baseline evaluation on anhedonia
+        - key: OBCS:0000077
+          variables:
+          - Standard deviation of baseline anhedonia
+      - key: GMHO:0000204
+        variables:
+        - 'Data type: endpoint vs. baseline difference in anhedonia symptom severity'
+        - Mean post-intervention anhedonia
+        - Number of participants with post-intervention evaluation on anhedonia
+        - Standard deviation of post-intervention anhedonia
+        children:
+        - key: OBI:0000679
+          variables:
+          - Mean post-intervention anhedonia
+        - key: GMHO:0000256
+          variables:
+          - 'Data type: endpoint vs. baseline difference in anhedonia symptom severity'
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with post-intervention evaluation on anhedonia
+        - key: OBCS:0000077
+          variables:
+          - Standard deviation of post-intervention anhedonia
+      - key: GMHO:0000201
+        variables:
+        - Baseline anhedonia scale
+        - Baseline anhedonia scale directionality
+        - Post-intervention anhedonia scale
+        - Post-intervention anhedonia scale directionality
+        children:
+        - key: GMHO:0000208
+          variables:
+          - Baseline anhedonia scale directionality
+          - Post-intervention anhedonia scale directionality
+      - key: GMHO:0000210
+        variables:
+        - Timepoint of post-intervention anhedonia measurement (weeks)             
+    - key: GMHO:0000143
+      children: 
+      - key: GMHO:0000209
+        variables:
+        - Mean baseline anxiety
+        - Number of participants with baseline evaluation on anxiety
+        - Standard deviation of baseline anxiety
+        children:
+         - key: OBI:0000679
+           variables:
+           - Mean baseline anxiety
+         - key: GMHO:0000206
+           variables:
+           - Number of participants with baseline evaluation on anxiety
+         - key: OBCS:0000077
+           variables:
+           - Standard deviation of baseline anxiety
+      - key: GMHO:0000204
+        variables:
+        - 'Data type: endpoint vs. baseline difference in anxiety symptom severity'
+        - Mean post-intervention anxiety
+        - Number of participants with post-intervention evaluation on anxiety
+        - Standard deviation of post-intervention anxiety
+        children:
+        - key: OBI:0000679
+          variables:
+          - Mean post-intervention anxiety
+        - key: GMHO:0000256
+          variables:
+          - 'Data type: endpoint vs. baseline difference in anxiety symptom severity'
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with post-intervention evaluation on anxiety
+        - key: OBCS:0000077
+          variables:
+          - Standard deviation of post-intervention anxiety
+      - key: GMHO:0000202
+        variables:
+        - Baseline anxiety scale
+        - Baseline anxiety scale directionality
+        - Post-intervention anxiety scale
+        - Post-intervention anxiety scale directionality
+        children:
+        - key: GMHO:0000208
+          variables:
+          - Baseline anxiety scale directionality
+          - Post-intervention anxiety scale directionality
+      - key: GMHO:0000210
+        variables:
+        - Timepoint of post-intervention anxiety measurement (weeks)
+    - key: GMHO:0000062
+      children:
+      - key: GMHO:0000209
+        variables:
+        - Mean baseline depression
+        - Number of participants with baseline evaluation on depression
+        children:
+        - key: OBI:0000679
+          variables:
+          - Mean baseline depression
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with baseline evaluation on depression
+      - key: GMHO:0000204
+        variables:
+        - 'Data type: endpoint vs. baseline difference in depression symptom severity'
+        - Mean post-intervention depression
+        - Number of participants with post-intervention measurements for depression
+        - Standard deviation of post-intervention depression
+        children:
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with post-intervention measurements for depression
+        - key: OBI:0000679
+          variables:
+          - Mean post-intervention depression
+        - key: OBCS:0000077
+          variables:
+          - Standard deviation of post-intervention depression
+        - key: GMHO:0000256
+          variables:
+          - 'Data type: endpoint vs. baseline difference in depression symptom severity'
+      - key: GMHO:0000223
+        variables:
+        - Scale for depression
+    - key: GMHO:0000079
+      children:
+      - key: GMHO:0000209
+        variables:
+        - Mean baseline severity of symptoms related to psychotic disorder diagnosis
+        - Number of participants with baseline evaluation on psychotic disorder symptoms
+        children:
+        - key: OBI:0000679
+          variables:
+          - Mean baseline severity of symptoms related to psychotic disorder diagnosis
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with baseline evaluation on psychotic disorder symptoms
+      - key: GMHO:0000204
+        variables:
+        - 'Data type: endpoint vs. baseline difference in psychotic disorder symptom
+        severity'
+        - Mean post-intervention severity of symptoms related to psychotic disorder
+        diagnosis
+        - Number of participants with post-intervention evaluation on symptoms related
+        to psychotic disorder diagnosis
+        - Standard deviation of post-intervention severity of symptoms related to psychotic
+        disorder diagnosis
+        children:
+        - key: GMHO:0000228
+          variables:
+          - Scale for symptoms related to psychotic disorder diagnosis
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with post-intervention evaluation on symptoms related
+          to psychotic disorder diagnosis
+        - key: OBI:0000679
+          variables:
+          - Mean post-intervention severity of symptoms related to psychotic disorder
+          diagnosis
+        - key: OBCS:0000077
+          variables:
+          - Standard deviation of post-intervention severity of symptoms related to
+          psychotic disorder diagnosis
+        - key: GMHO:0000256
+          variables:
+          - 'Data type: endpoint vs. baseline difference in psychotic disorder symptom
+          severity'
+      - key: GMHO:0000228
+        variables:
+        - Scale for symptoms related to psychotic disorder diagnosis
+      - key: GMHO:0000070
+        children:
+        - key: GMHO:0000209
+          variables:
+          - Mean baseline severity of negative symptoms related to psychotic disorder
+          diagnosis
+          - Number of participants with baseline evaluation on negative psychotic disorder
+          symptoms
+          children:
+          - key: OBI:0000679
+            variables:
+            - Mean baseline severity of negative symptoms related to psychotic disorder
+            diagnosis
+          - key: GMHO:0000206
+            variables:
+            - Number of participants with baseline evaluation on negative psychotic
+            disorder symptoms
+        - key: GMHO:0000204
+          variables:
+          - 'Data type: endpoint vs. baseline difference in negative psychotic disorder
+          symptom severity'
+          - Mean post-intervention severity of negative symptoms related to psychotic
+          disorder diagnosis
+          - Number of participants with post-intervention evaluation on negative symptoms
+          related to psychotic disorder diagnosis
+          - Standard deviation of post-intervention negative severity of symptoms related
+          to psychotic disorder diagnosis
+          children:
+          - key: GMHO:0000206
+            variables:
+            - Number of participants with post-intervention evaluation on negative symptoms
+            related to psychotic disorder diagnosis
+          - key: OBI:0000679
+            variables:
+            - Mean post-intervention severity of negative symptoms related to psychotic
+            disorder diagnosis
+          - key: OBCS:0000077
+            variables:
+            - Standard deviation of post-intervention negative severity of symptoms
+            related to psychotic disorder diagnosis
+          - key: GMHO:0000256
+            variables:
+            - 'Data type: endpoint vs. baseline difference in negative psychotic disorder
+            symptom severity'
+        - key: GMHO:0000225
+          variables:
+          - Scale for negative symptoms related to psychotic disorder diagnosis
+      - key: GMHO:0000078
+        children:
+        - key: GMHO:0000209
+          variables:
+          - Mean baseline severity of positive symptoms related to psychotic disorder
+          diagnosis
+          - Number of participants with baseline evaluation on positive psychotic disorder
+          symptoms
+          children:
+          - key: OBI:0000679
+            variables:
+            - Mean baseline severity of positive symptoms related to psychotic disorder
+            diagnosis
+          - key: GMHO:0000206
+            variables:
+            - Number of participants with baseline evaluation on positive psychotic
+            disorder symptoms
+        - key: GMHO:0000204
+          variables:
+          - 'Data type: endpoint vs. baseline difference in positive psychotic disorder
+          symptom severity'
+          - Mean post-intervention severity of positive symptoms related to psychotic
+          disorder diagnosis
+          - Number of participants with post-intervention evaluation on positive symptoms
+          related to psychotic disorder diagnosis
+          - Standard deviation of post-intervention positive severity of symptoms related
+          to psychotic disorder diagnosis
+          children:
+          - key: GMHO:0000206
+            variables:
+            - Number of participants with post-intervention evaluation on positive symptoms
+            related to psychotic disorder diagnosis
+          - key: OBI:0000679
+            variables:
+            - Mean post-intervention severity of positive symptoms related to psychotic
+            disorder diagnosis
+          - key: OBCS:0000077
+            variables:
+            - Standard deviation of post-intervention positive severity of symptoms
+            related to psychotic disorder diagnosis
+          - key: GMHO:0000256
+            variables:
+            - 'Data type: endpoint vs. baseline difference in positive psychotic disorder
+            symptom severity'        
+        - key: GMHO:0000226
+          variables:
+          - Scale for positive symptoms related to psychotic disorder diagnosis
+    - key: GMHO:0000173
+      children: 
+      - key: GMHO:0000209
+      - key: GMHO:0000204
+      - key: GMHO:0000263
+ - key: GMHO:0000078,GMHO:0000204
+        variables:
+        - 'Data type: endpoint vs. baseline difference in positive psychotic disorder
+          symptom severity'
+        - Mean post-intervention severity of positive symptoms related to psychotic
+          disorder diagnosis
+        - Number of participants with post-intervention evaluation on positive symptoms
+          related to psychotic disorder diagnosis
+        - Standard deviation of post-intervention positive severity of symptoms related
+          to psychotic disorder diagnosis
+        children:
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with post-intervention evaluation on positive symptoms
+            related to psychotic disorder diagnosis
+        - key: OBI:0000679
+          variables:
+          - Mean post-intervention severity of positive symptoms related to psychotic
+            disorder diagnosis
+        - key: OBCS:0000077
+          variables:
+          - Standard deviation of post-intervention positive severity of symptoms
+            related to psychotic disorder diagnosis
+        - key: GMHO:0000256
+          variables:
+          - 'Data type: endpoint vs. baseline difference in positive psychotic disorder
+            symptom severity'
+ 
+
+ 
+
+
+  
   - key: GMHO:0000135,GMHO:0000209
     variables:
     - Mean baseline reward sensitivity
