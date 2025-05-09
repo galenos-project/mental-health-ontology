@@ -616,233 +616,233 @@
       - key: GMHO:0000263
         variables:
         - Post-traumatic stress disorder scale
-    - key: biological measures
+  - key: biological measures
+    children:
+    - key: PATO:0000128
       children:
-      - key: PATO:0000128
+      - key: GMHO:0000209
+        variables:
+        - Mean baseline weight
+        - Number of participants with baseline evaluation of weight
         children:
-        - key: GMHO:0000209
+        - key: OBI:0000679
           variables:
           - Mean baseline weight
-          - Number of participants with baseline evaluation of weight
-          children:
-          - key: OBI:0000679
-            variables:
-            - Mean baseline weight
-          - key: GMHO:0000206
-            variables:
-            - Number of participants with baseline evaluation of weight        
-        - key: GMHO:0000204
+        - key: GMHO:0000206
           variables:
-          - 'Data type: endpoint vs. baseline difference in weight'
-          - Mean post-intervention weight
+          - Number of participants with baseline evaluation of weight        
+      - key: GMHO:0000204
+        variables:
+        - 'Data type: endpoint vs. baseline difference in weight'
+        - Mean post-intervention weight
+        - Number of participants with post-intervention evaluation on weight
+        - Standard deviation of post-intervention weight
+        children:
+        - key: GMHO:0000206
+          variables:
           - Number of participants with post-intervention evaluation on weight
-          - Standard deviation of post-intervention weight
-          children:
-          - key: GMHO:0000206
-            variables:
-            - Number of participants with post-intervention evaluation on weight
-          - key: OBI:0000679
-            variables:
-            - Mean post-intervention weight
-          - key: OBCS:0000077
-            variables:
-            - Standard deviation of post-intervention weight
-          - key: GMHO:0000256
-            variables:
-            - 'Data type: endpoint vs. baseline difference in weight'        
-        - key: GMHO:0000230
+        - key: OBI:0000679
           variables:
-          - Scale for weight
-      - key: CMO:0000230
-        children: 
-        - key: CMO:0000269
+          - Mean post-intervention weight
+        - key: OBCS:0000077
+          variables:
+          - Standard deviation of post-intervention weight
+        - key: GMHO:0000256
+          variables:
+          - 'Data type: endpoint vs. baseline difference in weight'        
+      - key: GMHO:0000230
+        variables:
+        - Scale for weight
+    - key: CMO:0000230
+      children: 
+      - key: CMO:0000269
+        variables:
+        - Midpoint estimate for the mean difference in QTc between the intervention and comparison condition (millisecond)
+        - Standard error for midpoint estimate regarding he mean difference in QTc between the intervention and control condition
+        children:
+        - key: GMHO:0000236
           variables:
           - Midpoint estimate for the mean difference in QTc between the intervention and comparison condition (millisecond)
+        - key: STATO:0000562
+          variables:
           - Standard error for midpoint estimate regarding he mean difference in QTc between the intervention and control condition
-          children:
-          - key: GMHO:0000236
-            variables:
-            - Midpoint estimate for the mean difference in QTc between the intervention and comparison condition (millisecond)
-          - key: STATO:0000562
-            variables:
-            - Standard error for midpoint estimate regarding he mean difference in QTc between the intervention and control condition
-      - key: EFO:0007003
+    - key: EFO:0007003
+      children:
+      - key: GMHO:0000209
+        variables:
+        - Mean baseline prolactin
+        - Number of participants with baseline evaluation of prolactin
         children:
-        - key: GMHO:0000209
+        - key: OBI:0000679
           variables:
           - Mean baseline prolactin
-          - Number of participants with baseline evaluation of prolactin
-          children:
-          - key: OBI:0000679
-            variables:
-            - Mean baseline prolactin
-          - key: GMHO:0000206
-            variables:
-            - Number of participants with baseline evaluation of prolactin       
-        - key: GMHO:0000204
+        - key: GMHO:0000206
           variables:
-          - 'Data type: endpoint vs. baseline difference in prolactin measurement'
-          - Mean post-intervention prolactin
+          - Number of participants with baseline evaluation of prolactin       
+      - key: GMHO:0000204
+        variables:
+        - 'Data type: endpoint vs. baseline difference in prolactin measurement'
+        - Mean post-intervention prolactin
+        - Number of participants with post-intervention evaluation on prolactin
+        - Standard deviation of post-intervention prolactin
+        children:
+        - key: GMHO:0000206
+          variables:
           - Number of participants with post-intervention evaluation on prolactin
-          - Standard deviation of post-intervention prolactin
-          children:
-          - key: GMHO:0000206
-            variables:
-            - Number of participants with post-intervention evaluation on prolactin
-          - key: OBI:0000679
-            variables:
-            - Mean post-intervention prolactin
-          - key: OBCS:0000077
-            variables:
-            - Standard deviation of post-intervention prolactin
-          - key: GMHO:0000256
-            variables:
-            - 'Data type: endpoint vs. baseline difference in prolactin measurement'        
-        - key: GMHO:0000227
+        - key: OBI:0000679
           variables:
-          - Scale for prolactin
-    - key: GMHO:0000067
+          - Mean post-intervention prolactin
+        - key: OBCS:0000077
+          variables:
+          - Standard deviation of post-intervention prolactin
+        - key: GMHO:0000256
+          variables:
+          - 'Data type: endpoint vs. baseline difference in prolactin measurement'        
+      - key: GMHO:0000227
+        variables:
+        - Scale for prolactin
+  - key: GMHO:0000067
+    children:
+    - key: GMHO:0000209
+      variables:
+      - Mean baseline functioning
       children:
-      - key: GMHO:0000209
+      - key: OBI:0000679
         variables:
         - Mean baseline functioning
-        children:
-        - key: OBI:0000679
-          variables:
-          - Mean baseline functioning
-      - key: GMHO:0000204
+    - key: GMHO:0000204
+      variables:
+      - 'Data type: endpoint vs. baseline difference in human functioning'
+      - Mean post-intervention severity of functioning
+      - Number of participants with post-intervention evaluation on functioning
+      - Standard deviation of post-intervention functioning
+      children:
+      - key: GMHO:0000206
+        variables:
+        - Number of participants with post-intervention evaluation on functioning
+      - key: OBI:0000679
+        variables:
+        - Mean post-intervention severity of functioning
+      - key: OBCS:0000077
+        variables:
+        - Standard deviation of post-intervention functioning
+      - key: GMHO:0000256
         variables:
         - 'Data type: endpoint vs. baseline difference in human functioning'
-        - Mean post-intervention severity of functioning
-        - Number of participants with post-intervention evaluation on functioning
-        - Standard deviation of post-intervention functioning
-        children:
-        - key: GMHO:0000206
-          variables:
-          - Number of participants with post-intervention evaluation on functioning
-        - key: OBI:0000679
-          variables:
-          - Mean post-intervention severity of functioning
-        - key: OBCS:0000077
-          variables:
-          - Standard deviation of post-intervention functioning
-        - key: GMHO:0000256
-          variables:
-          - 'Data type: endpoint vs. baseline difference in human functioning'
-      - key: GMHO:0000224
-        variables:
-        - Scale for functioning      
-    - key: GMHO:0000135
+    - key: GMHO:0000224
+      variables:
+      - Scale for functioning      
+  - key: GMHO:0000135
+    children:
+    - key: GMHO:0000209
+      variables:
+      - Mean baseline reward sensitivity
+      - Number of participants with baseline evaluation on reward sensitivity
+      - Standard deviation of baseline reward sensitivity
       children:
-      - key: GMHO:0000209
+      - key: OBI:0000679
         variables:
         - Mean baseline reward sensitivity
+      - key: GMHO:0000206
+        variables:
         - Number of participants with baseline evaluation on reward sensitivity
+      - key: OBCS:0000077
+        variables:
         - Standard deviation of baseline reward sensitivity
-        children:
-        - key: OBI:0000679
-          variables:
-          - Mean baseline reward sensitivity
-        - key: GMHO:0000206
-          variables:
-          - Number of participants with baseline evaluation on reward sensitivity
-        - key: OBCS:0000077
-          variables:
-          - Standard deviation of baseline reward sensitivity
-      - key: GMHO:0000204
-        variables:
-        - 'Data type: endpoint vs. baseline difference in reward sensitivity'
-        - Mean post-intervention reward sensitivity
-        - Number of participants with post-intervention evaluation on reward sensitivity
-        - Standard deviation of post-intervention reward sensitivity
-        children:
-        - key: OBI:0000679
-          variables:
-          - Mean post-intervention reward sensitivity
-        - key: GMHO:0000256
-          variables:
-          - 'Data type: endpoint vs. baseline difference in reward sensitivity'      
-        - key: GMHO:0000206
-          variables:
-          - Number of participants with post-intervention evaluation on reward sensitivity
-        - key: OBCS:0000077
-          variables:
-          - Standard deviation of post-intervention reward sensitivity      
-      - key: GMHO:0000210
-        variables:
-        - Timepoint of post-intervention reward sensitivity measurement (weeks)
-      - key: GMHO:0000207
-        variables:
-        - Baseline reward sensitivity scale
-        - Baseline reward sensitivity scale directionality
-        - Post-intervention reward sensitivity scale
-        - Post-intervention reward sensitivity scale directionality
-        children:
-          - key: GMHO:0000208
-            variables:
-            - Baseline reward sensitivity scale directionality
-            - Post-intervention reward sensitivity scale directionality
-    - key: MF:0000020
+    - key: GMHO:0000204
+      variables:
+      - 'Data type: endpoint vs. baseline difference in reward sensitivity'
+      - Mean post-intervention reward sensitivity
+      - Number of participants with post-intervention evaluation on reward sensitivity
+      - Standard deviation of post-intervention reward sensitivity
       children:
-      - key: GMHO:0000209
+      - key: OBI:0000679
+        variables:
+        - Mean post-intervention reward sensitivity
+      - key: GMHO:0000256
+        variables:
+        - 'Data type: endpoint vs. baseline difference in reward sensitivity'      
+      - key: GMHO:0000206
+        variables:
+        - Number of participants with post-intervention evaluation on reward sensitivity
+      - key: OBCS:0000077
+        variables:
+        - Standard deviation of post-intervention reward sensitivity      
+    - key: GMHO:0000210
+      variables:
+      - Timepoint of post-intervention reward sensitivity measurement (weeks)
+    - key: GMHO:0000207
+      variables:
+      - Baseline reward sensitivity scale
+      - Baseline reward sensitivity scale directionality
+      - Post-intervention reward sensitivity scale
+      - Post-intervention reward sensitivity scale directionality
+      children:
+        - key: GMHO:0000208
+          variables:
+          - Baseline reward sensitivity scale directionality
+          - Post-intervention reward sensitivity scale directionality
+  - key: MF:0000020
+    children:
+    - key: GMHO:0000209
+      variables:
+      - Mean baseline cognition
+      - Number of participants with baseline evaluation on cognition
+      children:
+      - key: OBI:0000679
         variables:
         - Mean baseline cognition
-        - Number of participants with baseline evaluation on cognition
-        children:
-        - key: OBI:0000679
-          variables:
-          - Mean baseline cognition
-        - key: GMHO:0000206
-          variables:
-          - Number of participants with baseline evaluation on cognition      
-      - key: GMHO:0000204
+      - key: GMHO:0000206
         variables:
-        - 'Data type: endpoint vs. baseline difference in mental processes'
-        - Mean post-intervention cognition
+        - Number of participants with baseline evaluation on cognition      
+    - key: GMHO:0000204
+      variables:
+      - 'Data type: endpoint vs. baseline difference in mental processes'
+      - Mean post-intervention cognition
+      - Number of participants with post-intervention evaluation on cognition
+      - Standard deviation of post-intervention cognition
+      children:
+      - key: GMHO:0000206
+        variables:
         - Number of participants with post-intervention evaluation on cognition
+      - key: OBI:0000679
+        variables:
+        - Mean post-intervention cognition
+      - key: OBCS:0000077
+        variables:
         - Standard deviation of post-intervention cognition
-        children:
-        - key: GMHO:0000206
-          variables:
-          - Number of participants with post-intervention evaluation on cognition
-        - key: OBI:0000679
-          variables:
-          - Mean post-intervention cognition
-        - key: OBCS:0000077
-          variables:
-          - Standard deviation of post-intervention cognition
-        - key: GMHO:0000256
-          variables:
-          - 'Data type: endpoint vs. baseline difference in mental processes'      
-      - key: GMHO:0000259
+      - key: GMHO:0000256
         variables:
-        - Scale for cognition
-    - key: ADDICTO:0001308
+        - 'Data type: endpoint vs. baseline difference in mental processes'      
+    - key: GMHO:0000259
+      variables:
+      - Scale for cognition
+  - key: ADDICTO:0001308
+    children:
+    - key: GMHO:0000204
+      variables:
+      - Number of participants for whom relapse was measured
+      - Number of participants who relapsed based on study criteria
       children:
-      - key: GMHO:0000204
+      - key: GMHO:0000214
         variables:
-        - Number of participants for whom relapse was measured
         - Number of participants who relapsed based on study criteria
-        children:
-        - key: GMHO:0000214
-          variables:
-          - Number of participants who relapsed based on study criteria
-        - key: GMHO:0000206
-          variables:
-          - Number of participants for whom relapse was measured  
-    - key: GMHO:0000076
-      children:
-      - key: GMHO:0000204
+      - key: GMHO:0000206
         variables:
-        - Number of participants for whom a response to treatment was measured
+        - Number of participants for whom relapse was measured  
+  - key: GMHO:0000076
+    children:
+    - key: GMHO:0000204
+      variables:
+      - Number of participants for whom a response to treatment was measured
+      - Number of participants who had a response to treatments
+      children:
+      - key: GMHO:0000214
+        variables:
         - Number of participants who had a response to treatments
-        children:
-        - key: GMHO:0000214
-          variables:
-          - Number of participants who had a response to treatments
-        - key: GMHO:0000206
-          variables:
-          - Number of participants for whom a response to treatment was measured      
+      - key: GMHO:0000206
+        variables:
+        - Number of participants for whom a response to treatment was measured      
 - key: Research methods
   children:
   - key: Study information
