@@ -379,15 +379,12 @@
           - Standard deviation of post-intervention anhedonia
       - key: GMHO:0000201
         variables:
-        - Baseline anhedonia scale
-        - Baseline anhedonia scale directionality
-        - Post-intervention anhedonia scale
-        - Post-intervention anhedonia scale directionality
+        - Anhedonia scale
+        - Anhedonia scale directionality
         children:
         - key: GMHO:0000208
           variables:
-          - Baseline anhedonia scale directionality
-          - Post-intervention anhedonia scale directionality
+          - Anhedonia scale directionality
       - key: GMHO:0000210
         variables:
         - Timepoint of post-intervention anhedonia measurement (weeks)             
@@ -429,15 +426,12 @@
           - Standard deviation of post-intervention anxiety
       - key: GMHO:0000202
         variables:
-        - Baseline anxiety scale
-        - Baseline anxiety scale directionality
-        - Post-intervention anxiety scale
-        - Post-intervention anxiety scale directionality
+        - Anxiety scale
+        - Anxiety scale directionality
         children:
         - key: GMHO:0000208
           variables:
-          - Baseline anxiety scale directionality
-          - Post-intervention anxiety scale directionality
+          - Anxiety scale directionality
       - key: GMHO:0000210
         variables:
         - Timepoint of post-intervention anxiety measurement (weeks)
@@ -773,15 +767,12 @@
       - Timepoint of post-intervention reward sensitivity measurement (weeks)
     - key: GMHO:0000207
       variables:
-      - Baseline reward sensitivity scale
-      - Baseline reward sensitivity scale directionality
-      - Post-intervention reward sensitivity scale
-      - Post-intervention reward sensitivity scale directionality
+      - Reward sensitivity scale
+      - Reward sensitivity scale directionality
       children:
         - key: GMHO:0000208
           variables:
-          - Baseline reward sensitivity scale directionality
-          - Post-intervention reward sensitivity scale directionality
+          - Reward sensitivity scale directionality
   - key: MF:0000020
     children:
     - key: GMHO:0000209
