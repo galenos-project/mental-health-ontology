@@ -685,3 +685,4 @@ LSR1_anhedonia_H/data/human/LSR1_for_ontology.csv,,1,,arm,Study Arm,GMHO:0000127
 ,,2,,dropout_any_n,Number of participants for whom drop out was assessed,GMHO:0000258,number of participants with drop-out assessment,Number of intervention participants for whom a drop-out assessment was made.,number of intervention participants,Intervention outcomes and spillover effects,,GMHO:0000075,No Combo,
 ,,structural,,,,BCIO:015249,biological sex population statistic,The aggregate of biological sex in a population.,data item,Intervention population,Sex,,,
 ,,structural,,,,BCIO:015415,human age population statistic,The aggregate of human age in a population.,data item,Intervention population,Age,,,
+,,structural,,,,GMHO:0000087,symptom severity,A data item that is about the severity dimension associated with a symptom.,data item,Intervention outcomes and spillover effects,,,,
