@@ -457,7 +457,7 @@
         children:
         - key: GMHO:0000206
           variables:
-          - Number of participants with post-intervention measurements for depression
+          - Number of participants with post-intervention evaluation on depression
         - key: OBI:0000679
           variables:
           - Mean post-intervention depression
@@ -838,6 +838,9 @@
   children:
   - key: Study information
     children:
+    - key: GMHO:0000138
+      variables:
+      - Timepoint of measurement
     - key: GMHO:0000127
       variables:
       - Study Arm
