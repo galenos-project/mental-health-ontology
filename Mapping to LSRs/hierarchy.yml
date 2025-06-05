@@ -16,7 +16,7 @@
       children:
       - key: BCIO:015416
         variables:
-        - Mean age
+        - Mean age per study arm
   - key: GMHO:0000152
     variables:
     - Total number of intervention participants
