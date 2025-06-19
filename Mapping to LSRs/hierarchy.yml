@@ -19,7 +19,7 @@
         - Mean age per study arm
   - key: GMHO:0000152
     variables:
-    - Total number of intervention participants
+    - Total number of study participants
     children:
     - key: GMHO:0000075
       variables:
@@ -37,7 +37,7 @@
         - Number of participants for whom drop out was assessed
     - key: GMHO:0000154
       variables:
-      - Number of intervention participants allocated to an arm
+      - Number of study participants allocated to an arm
   - key: GMHO:0000266
     variables:
     - Mental health status
@@ -857,7 +857,7 @@
       children:
       - key: ADDICTO:0001267
         variables:
-        - Study design
+        - Interventional study design
     - key: GMHO:0000237
       variables:
       - Number of crossover periods
