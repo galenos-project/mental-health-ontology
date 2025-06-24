@@ -96,14 +96,10 @@
     children:
     - key: GMHO:0000245
       children:
-      - key: GMHO:0000005
+      - key: GMHO:0000005, IAO:0000003
         variables:
         - Intervention duration (numeric value)
         - Intervention duration (unit)
-        children:
-        - key: IAO:0000003
-          variables:
-          - Intervention duration (unit)
     - key: GMHO:0000244
     - key: GMHO:0000246
 - key: Baseline and Outcome Measures
