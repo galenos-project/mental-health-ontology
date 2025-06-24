@@ -2,14 +2,14 @@
   children:
   - key: population characteristic
     children: 
-    - key: BCIO:015249
+    - key: BCIO:015249,BCIO:015360
       children:
-      - key: BCIO:015327
+      - key: BCIO:015327,BCIO:015330
         children:
-        - key: GMHO:0000213
+        - key: GMHO:0000213,GMHO:0000267
           variables:
           - Number of female participants
-        - key: BCIO:015329
+        - key: BCIO:015329,BCIO:015332
           variables:
           - Proportion of female
     - key: BCIO:015415
