@@ -96,7 +96,7 @@
     children:
     - key: GMHO:0000245
       children:
-      - key: GMHO:0000005, IAO:0000003
+      - key: GMHO:0000005,IAO:0000003
         variables:
         - Intervention duration (numeric value)
         - Intervention duration (unit)
