@@ -53,10 +53,10 @@
     children:
     - key: GMHO:0000262
       variables:
-      - Pharmacological treatment delivered
+      - Pharmacological intervention delivered
     - key: GMHO:0000239
       variables:
-      - Type of psychological treatment
+      - Type of psychological intervention
     - key: GMHO:0000242
       children:
       - key: GMHO:0000001
