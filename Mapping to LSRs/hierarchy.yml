@@ -1,4 +1,4 @@
-- key: Population
+- key: BCIO:015095
   children:
   - key: population characteristic
     children: 
@@ -45,7 +45,7 @@
     - key: GMHO:0000255
       variables:
       - Severity of condition  
-- key: Intervention
+- key: GMHO:0000248
   children:
   - key: GMHO:0000241
     variables:
@@ -102,7 +102,7 @@
         - Intervention duration (unit)
     - key: GMHO:0000244
     - key: GMHO:0000246
-- key: Baseline and Outcome Measures
+- key: IAO:0000109
   children:
   - key: GMHO:0000047,GMHO:0000204
     variables:
@@ -830,7 +830,7 @@
       - key: GMHO:0000206
         variables:
         - Number of participants for whom a response to treatment was measured      
-- key: Research methods
+- key: GMHO:0000268
   children:
   - key: Study information
     children:
