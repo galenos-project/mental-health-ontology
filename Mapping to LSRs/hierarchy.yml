@@ -677,9 +677,10 @@
         - Mean baseline prolactin
         - Number of participants with baseline evaluation of prolactin
         children:
-        - key: OBI:0000679
+        - key: OBI:0000679,GMHO:0000227
           variables:
           - Mean baseline prolactin
+          - Scale for prolactin
         - key: GMHO:0000206
           variables:
           - Number of participants with baseline evaluation of prolactin       
@@ -693,9 +694,10 @@
         - key: GMHO:0000206
           variables:
           - Number of participants with post-intervention evaluation on prolactin
-        - key: OBI:0000679
+        - key: OBI:0000679,GMHO:0000227
           variables:
           - Mean post-intervention prolactin
+          - Scale for prolactin
         - key: OBCS:0000077
           variables:
           - Standard deviation of post-intervention prolactin
@@ -711,9 +713,10 @@
       variables:
       - Mean baseline functioning
       children:
-      - key: OBI:0000679
+      - key: OBI:0000679,GMHO:0000224
         variables:
         - Mean baseline functioning
+        - Scale for functioning
     - key: GMHO:0000204
       variables:
       - 'Data type: endpoint vs. baseline difference in human functioning'
@@ -724,9 +727,10 @@
       - key: GMHO:0000206
         variables:
         - Number of participants with post-intervention evaluation on functioning
-      - key: OBI:0000679
+      - key: OBI:0000679,GMHO:0000224
         variables:
         - Mean post-intervention severity of functioning
+        - Scale for functioning
       - key: OBCS:0000077
         variables:
         - Standard deviation of post-intervention functioning
@@ -744,9 +748,10 @@
       - Number of participants with baseline evaluation on reward sensitivity
       - Standard deviation of baseline reward sensitivity
       children:
-      - key: OBI:0000679
+      - key: OBI:0000679,GMHO:0000207
         variables:
         - Mean baseline reward sensitivity
+        - Reward sensitivity scale
       - key: GMHO:0000206
         variables:
         - Number of participants with baseline evaluation on reward sensitivity
@@ -760,9 +765,10 @@
       - Number of participants with post-intervention evaluation on reward sensitivity
       - Standard deviation of post-intervention reward sensitivity
       children:
-      - key: OBI:0000679
+      - key: OBI:0000679,GMHO:0000207
         variables:
         - Mean post-intervention reward sensitivity
+        - Reward sensitivity scale
       - key: GMHO:0000256
         variables:
         - 'Data type: endpoint vs. baseline difference in reward sensitivity'      
@@ -790,9 +796,10 @@
       - Mean baseline cognition
       - Number of participants with baseline evaluation on cognition
       children:
-      - key: OBI:0000679
+      - key: OBI:0000679,GMHO:0000259
         variables:
         - Mean baseline cognition
+        - Scale for cognition
       - key: GMHO:0000206
         variables:
         - Number of participants with baseline evaluation on cognition      
@@ -806,9 +813,10 @@
       - key: GMHO:0000206
         variables:
         - Number of participants with post-intervention evaluation on cognition
-      - key: OBI:0000679
+      - key: OBI:0000679,GMHO:0000259
         variables:
         - Mean post-intervention cognition
+        - Scale for cognition
       - key: OBCS:0000077
         variables:
         - Standard deviation of post-intervention cognition
