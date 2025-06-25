@@ -673,5 +673,5 @@ LSR1_anhedonia_H/data/human/LSR1_for_ontology.csv,,(gender),Population,female_pr
 LSR3_taar1_H/data/data_2024-01-22_LSR3_H.xlsx,https://doi.org/10.5281/zenodo.10890206,unit,,weight_scale_name,Unit for weight,IAO:0000003,measurement unit label,A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.,datum label,Intervention outcomes and spillover effects,3,,,
 ,,Population,,,,BCIO:015095,intervention population,A human population who are exposed to an intervention.,human population,UpperLevel Defs,structural,,,
 ,,Intervention,,,,GMHO:0000248,mental health intervention,An intervention that has the aim of influencing some aspect of mental health.,intervention,UpperLevel Defs,structural,,,
-,,,,,,,,,,,,,,
 ,,Research study,,,,GMHO:0000268,research study,A planned process that executes some study design or protocol to generate scientific data that is interpreted to test or generate a hypothesis.,planned process,UpperLevel Defs,structural,,,
+,,physical measures,,,,ERO:0001292,physiological assay,An organismal assay designed to capture information pertaining to the the organic processes and phenomena of an organism or any of its parts or of a particular bodily process.,organismal assay,,structural,,,
