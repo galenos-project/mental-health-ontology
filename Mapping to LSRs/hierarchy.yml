@@ -614,10 +614,12 @@
         variables:
         - Mean baseline weight
         - Number of participants with baseline evaluation of weight
+        - Unit for weight
         children:
-        - key: OBI:0000679
+        - key: OBI:0000679,IAO:0000003
           variables:
           - Mean baseline weight
+          - Unit for weight
         - key: GMHO:0000206
           variables:
           - Number of participants with baseline evaluation of weight        
@@ -631,18 +633,16 @@
         - key: GMHO:0000206
           variables:
           - Number of participants with post-intervention evaluation on weight
-        - key: OBI:0000679
+        - key: OBI:0000679,IAO:0000003
           variables:
           - Mean post-intervention weight
+          - Unit for weight
         - key: OBCS:0000077
           variables:
           - Standard deviation of post-intervention weight
         - key: GMHO:0000256
           variables:
           - 'Data type: endpoint vs. baseline difference in weight'        
-      - key: GMHO:0000230
-        variables:
-        - Scale for weight
     - key: CMO:0000230
       children: 
       - key: CMO:0000269
