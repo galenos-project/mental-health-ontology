@@ -1,0 +1,39 @@
+on:
+  push:
+    branches:
+      - master
+    paths: 
+      - "UpperLevel/GMHO_External_Imports.xlsx"
+  workflow_dispatch:
+permissions:
+    contents: write
+concurrency:
+  group: "build_external"
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build externals
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip' # caching pip dependencies
+      - name: Install dependencies
+        run: pip install git+https://github.com/ontology-tools/onto-spread-ed.git
+      - name: Install ROBOT
+        run: |
+          curl -o /tmp/robot.jar -L https://github.com/ontodev/robot/releases/download/v1.9.7/robot.jar
+          curl -L https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > /tmp/robot
+          chmod +x /tmp/robot
+      - name: Build externals
+        env:
+          ROBOT: /tmp/robot
+        run: ose externals build -vvvvv
+      - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
+        with:
+          add: '.'
+          default_author: 'github_actions'
+          message: "Built external imports"
+          push: true
