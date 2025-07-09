@@ -480,6 +480,19 @@ Add as annotation triples in the granting ontology</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
+        <oboInOwl:hasDbXref>http://purl.org/dc/terms/contributor</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-contributor</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-contributor</oboInOwl:shorthand>
+        <rdfs:label>contributor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/terms/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
@@ -567,7 +580,12 @@ Add as annotation triples in the granting ontology</obo:IAO_0000115>
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <obo:IAO_0000112>disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) &quot;NCIT:C41009&quot;^^xsd:string</obo:IAO_0000112>
+        <obo:IAO_0000115>An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/123"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
         <rdfs:label>database_cross_reference</rdfs:label>
+        <rdfs:label>has cross-reference</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -2696,6 +2714,23 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000119 xml:lang="en">OBI_0000305</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">textual entity</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Words, sentences, paragraphs, and the written (non-figure) parts of publications are all textual entities</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">AR, (IAO call 2009-09-01): a document as a whole is not typically a textual entity, because it has pictures in it - rather there are parts of it that are textual entities. Examples: The title, paragraph 2 sentence 7, etc.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">MC, 2009-09-14 (following IAO call 2009-09-01): textual entities live at the FRBR (http://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records) manifestation level. Everything is significant: line break, pdf and html versions of same document are different textual entities.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">text</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">textual entity</rdfs:label>
     </owl:Class>
     
 
