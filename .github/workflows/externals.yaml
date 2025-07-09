@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - main
     paths: 
       - "UpperLevel/GMHO_External_Imports.xlsx"
   workflow_dispatch:
