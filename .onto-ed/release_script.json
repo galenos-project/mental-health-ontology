@@ -1,7 +1,7 @@
 {
   "iri_prefix": "https://galenos.org.uk/ontologies/",
   "short_repository_name": "GMHO",
-  "full_repository_name": "galenos-project/mental-health-ontology",
+  "full_repository_name": "b-gehrke/mental-health-ontology",
   "external": {
     "sources": [
       {
@@ -12,9 +12,12 @@
     "target": {
       "file": "UpperLevel/gmho_external.owl",
       "iri": "https://galenos.org.uk/ontologies/gmho_external.owl",
-      "ontology_annotations": {}
+      "ontology_annotations": {},
+      "publish": true
     },
-    "needs": []
+    "needs": [],
+    "renameTermFile": null,
+    "addParentsFile": null
   },
   "files": {
     "gmho": {
@@ -56,7 +59,9 @@
       },
       "needs": [
         "gmho_upper"
-      ]
+      ],
+      "renameTermFile": null,
+      "addParentsFile": null
     },
     "gmho_final": {
       "sources": [
@@ -72,9 +77,12 @@
       "target": {
         "file": "gmho.owl",
         "iri": "https://galenos.org.uk/ontologies/gmho.owl",
-        "ontology_annotations": {}
+        "ontology_annotations": {},
+        "publish": true
       },
-      "needs": []
+      "needs": [],
+      "renameTermFile": null,
+      "addParentsFile": null
     },
     "gmho_upper": {
       "sources": [
@@ -90,9 +98,12 @@
       "target": {
         "file": "gmho_upper.owl",
         "iri": "https://galenos.org.uk/ontologies/gmho_upper.owl",
-        "ontology_annotations": {}
+        "ontology_annotations": {},
+        "publish": true
       },
-      "needs": []
+      "needs": [],
+      "renameTermFile": null,
+      "addParentsFile": null
     }
   },
   "steps": [
@@ -102,7 +113,9 @@
     },
     {
       "name": "IMPORT_EXTERNAL",
-      "args": {}
+      "args": {
+        "use_existing_file": true
+      }
     },
     {
       "name": "VALIDATION",
