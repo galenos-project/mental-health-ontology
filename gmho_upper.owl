@@ -34,9 +34,33 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     
 
 
@@ -44,6 +68,14 @@
 
     <owl:AnnotationProperty rdf:about="https://galenos.org.uk/ontologies/GMHOR_0000001">
         <rdfs:label>LSR no</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHOR_0000002 -->
+
+    <owl:AnnotationProperty rdf:about="https://galenos.org.uk/ontologies/GMHOR_0000002">
+        <rdfs:label>informal label</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -56,6 +88,27 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000115>A core relation that holds between a part and its whole.</obo:IAO_0000115>
+        <rdfs:label>part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <obo:IAO_0000115>A core relation that holds between a whole and its part.</obo:IAO_0000115>
+        <rdfs:label>has part</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -74,6 +127,512 @@
         <obo:IAO_0000115>Inverse of occurrent_part_of which is defined as: b occurrent_part_of c =Def. b is a part of c and b and c are occurrents.</obo:IAO_0000115>
         <rdfs:label>has process part</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <obo:IAO_0000115>Is about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <rdfs:label>is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015095 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015095">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_041000"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A human population who are exposed to an intervention.</obo:IAO_0000115>
+        <rdfs:comment>The definition of intervention population (A human population who are exposed to an intervention) does not imply an explicit assignment to an intervention arm. While some interventions will have study designs in which researchers explicitly assign participants to intervention and control groups, this is not the case for all interventions (e.g., policy changes or public health campaigns).</rdfs:comment>
+        <rdfs:label>intervention population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015161 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000112>sum of multiple experienced events</obo:IAO_0000112>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A history that is of a person.</obo:IAO_0000115>
+        <rdfs:comment>A person&apos;s history includes the sum of their experiences, which can include experiences relating to their cultural, social and economic context.</rdfs:comment>
+        <rdfs:label>personal history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_037000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_037000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000112>Examples of interventions are putting health warnings on cigarette packets, providing free stop smoking services and banning smoking in public places.</obo:IAO_0000112>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A planned process that has the aim of influencing an outcome.</obo:IAO_0000115>
+        <rdfs:label>intervention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_039000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_039000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A process that is influenced by an intervention.</obo:IAO_0000115>
+        <rdfs:label>intervention outcome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_040000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_040000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A process that is produced by a person.</obo:IAO_0000115>
+        <rdfs:label>individual human activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_041000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_041000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>An object aggregate that consists of two or more people.</obo:IAO_0000115>
+        <obo:IAO_0000118>target population</obo:IAO_0000118>
+        <rdfs:comment>This entity represents any group consisting of two or more individuals. It could range for example from small groups, neighbourhoods, and organisations to entire national populations.</rdfs:comment>
+        <rdfs:label>human population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_043000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_044003 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044003"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_044004 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044004">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044003"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A particular manner of communicating aimed at inducing or avoiding certain kinds of responses in others, or demonstrating certain characteristics of the initiator.</obo:IAO_0000115>
+        <rdfs:label>communication style</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_044005 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044005">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style that is an attribute of an intervention content communication process.</obo:IAO_0000115>
+        <rdfs:comment>An intervention can include various different styles of delivery for different parts of the intervention.
+The definition of &quot;intervention style of delivery&quot; is based on two other entities, namely &quot;communication style&quot; and &quot;intervention content communication process&quot;. Their definitions are presented below.
+communication style (BCIO:044004): A particular manner of communicating aimed at inducing or avoiding certain kinds of responses in others, or demonstrating certain characteristics of the initiator.
+intervention content communication process (BCIO:044001): A communication that transmits the content of an intervention Note that an intervention is a planned process with the aim of influencing some outcome whereas a behaviour change intervention is an intervention that aims to influence human behaviour as an outcome.</rdfs:comment>
+        <rdfs:label>intervention style of delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_045000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_045000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A planned process by which intervention content is delivered.</obo:IAO_0000115>
+        <rdfs:comment>This class intends to represent the actual delivery of an intervention, whereas the class &quot;mental health intervention scenario plan&quot; refers to the planned intervention, including the planned delivery of an intervention. Distinguishing between these two classes allows for the assessment of intervention fidelity. To capture planned delivery, researchers could annotate both the class &quot;intervention delivery&quot; and &quot;mental health intervention scenario plan&quot;.
+The definition of &quot;intervention delivery&quot; states that it is &quot;a planned process by which intervention content is delivered,&quot; which refers to the actual execution of the intervention. This phrasing reflects that the intervention was designed and planned in advance before being implemented, thereby making it a &quot;planned process&quot;.</rdfs:comment>
+        <rdfs:label>intervention delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_046000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_046000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A planned process that is part of an intervention and is intended to be causally active in influencing the intervention outcome.</obo:IAO_0000115>
+        <rdfs:label>intervention content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050487 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050487">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000112>experienced event</obo:IAO_0000112>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A process that is part of a personal history.</obo:IAO_0000115>
+        <rdfs:label>personal history part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050916 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050916">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_040000"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human activity of an intervention participant within one or more parts of the intervention.</obo:IAO_0000115>
+        <rdfs:comment>Engagement can involve cognitive, emotional and behavioural engagement with an intervention.</rdfs:comment>
+        <rdfs:label>participant engagement with intervention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
+        <rdfs:label>process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A realizable entity the manifestation of which brings about some result or end that is not essential to a continuant in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant in some kinds of natural, social or institutional contexts.</obo:IAO_0000115>
+        <rdfs:label>role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists.</obo:IAO_0000115>
+        <rdfs:label>object aggregate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A process that is the sum of the totality of processes taking place in the spatiotemporal region occupied by a material entity or site, including processes on the surface of the entity or within the cavities to which it serves as host.</obo:IAO_0000115>
+        <rdfs:label>history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000087"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>An extended organism that is a member of the species Homo sapiens.</obo:IAO_0000115>
+        <rdfs:label>person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A process that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
+        <rdfs:label>planned process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a planned process.</obo:IAO_0000115>
+        <rdfs:label>plan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>An object aggregate consisting of an organism and all material entities located within the organism, overlapping the organism, or occupying sites formed in part by the organism.</obo:IAO_0000115>
+        <rdfs:label>extended organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SEPIO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A planned process that executes some study design or protocol to generate scientific data that is interpreted to test or generate a hypothesis.</obo:IAO_0000115>
+        <rdfs:label>research study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000003 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000003">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A process attribute whose bearer is an intervention.</obo:IAO_0000115>
+        <obo:IAO_0000119>BCIO:050315</obo:IAO_0000119>
+        <rdfs:label>intervention attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000169 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000169">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An aggregate of entities that form the environment in which an intervention is provided.</obo:IAO_0000115>
+        <obo:IAO_0000119>BCIO:005000</obo:IAO_0000119>
+        <rdfs:label>intervention setting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000199 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000199">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A process that is causally active in the relationship between an intervention scenario and its intervention outcome.</obo:IAO_0000115>
+        <rdfs:comment>For a construct to be a mechanism of action, it must be causally active in bringing about the intervention’s effect on its outcome. However, interventions are typically designed based on hypothesised mechanisms of action, which may or may not hold true depending on factors such as behaviour type, population, and setting. 
+The ontology provides a structured framework for organising mechanisms of action but does not replace the need for empirical validation. The ontology does not specify the level of evidence required to confirm that a hypothesised mechanism has been realised. In other words, the ontology itself does not make causal inferences about specific mechanisms. 
+When using the ontology, researchers can code hypothesised mechanisms within the subclasses of “intervention mechanism of action”. The assessment of whether sufficient evidence supports a causal relationship occurs at the annotation level, where empirical data validate the connections between constructs. 
+The relationship between intervention techniques, mechanisms, and outcomes is often complex and non-linear. Multiple mechanisms of action may interact in various ways, including combinations, sequences, or feedback loops.</rdfs:comment>
+        <rdfs:label>intervention mechanism of action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000241 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000241">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_046000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An intervention content that is part of a mental health intervention.</obo:IAO_0000115>
+        <rdfs:label>mental health intervention content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000242 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000242">
+        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000003"/>
+        <obo:IAO_0000112>drug dose and number of intervention techniques (e.g., action plans, social support)</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An intervention attribute that is its amount.</obo:IAO_0000115>
+        <rdfs:comment>Intervention dose can capture the intensity of any intervention, including social, physical, psychological and pharmacological interventions.
+Intervention dose refers to the intensity or amount of an intervention, which is about the content of an intervention. In contrast, an intervention&apos;s schedule of delivery is about the temporal aspects of the intervention. There is some overlap between the entities &quot;intervention dose&quot; and &quot;intervention schedule of delivery&quot;. For example, a more frequent intervention schedule with specific doses would suggest a higher overall dose of the intervention. However, &quot;intervention dose&quot; can capture concepts that are not directly relevant to the temporal organisation of the intervention, such as overall number of intervention strategies and drug dose. This class intends to represent the actual dose delivered as part of an intervention, whereas the class &quot;mental health intervention scenario plan&quot; refers to the planned intervention, including the planned dose of an intervention. Distinguishing between these two classes allows for the assessment of intervention fidelity. To capture planned dose, researchers could annotate both the class &quot;intervention dose&quot; and &quot;mental health intervention scenario plan&quot;.</rdfs:comment>
+        <rdfs:label>intervention dose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000244 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000244">
+        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000003"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An intervention attribute that is the physical or informational medium through which an intervention is provided.</obo:IAO_0000115>
+        <rdfs:label>intervention mode of delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000245 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000245">
+        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000003"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An intervention attribute that involves its temporal organisation.</obo:IAO_0000115>
+        <rdfs:comment>Temporal organisation includes different temporal dimensions, such as timing, frequency, duration and the sequence of activities.
+Intervention dose refers to the intensity or amount of an intervention, which is about the content of an intervention. In contrast, an intervention&apos;s schedule of delivery is about the temporal aspects of the intervention. There is some overlap between the entities &quot;intervention dose&quot; and &quot;intervention schedule of delivery&quot;. For example, a more frequent intervention schedule with specific doses would suggest a higher overall dose of the intervention. However, &quot;intervention dose&quot; can capture concepts that are not directly relevant to the temporal organisation of the intervention, such as overall number of intervention strategies and drug dose.</rdfs:comment>
+        <rdfs:label>intervention schedule of delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000246 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000246">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A role played by a person, population or organisation that provides an intervention.</obo:IAO_0000115>
+        <obo:IAO_0000118>intervention provider</obo:IAO_0000118>
+        <rdfs:comment>The entity “intervention source” has been defined to include a person, population or organisation, as these sources can be legally accountable for an intervention. A computer program or machine cannot be held accountable in the same way. Therefore, the organisation or people that provide the computer program or machine would be considered the intervention source, where relevant. When an intervention is delivered via a computer program (e.g., an app), this can be captured in the ontology through the relevant subclasses of &quot;intervention mode of delivery&quot;.</rdfs:comment>
+        <rdfs:label>intervention source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000247 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000247">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A planned process that is the smallest part of an intervention that is observable, replicable and on its own has the potential to influence an intervention outcome.</obo:IAO_0000115>
+        <rdfs:label>intervention technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000248 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000248">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_037000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An intervention that has the aim of influencing some aspect of mental health.</obo:IAO_0000115>
+        <rdfs:comment>The &quot;mental health intervention scenario&quot; entity captures a &quot;mental health intervention&quot; within a specific context, level of engagement and outcomes. Mental health interventions (represented as &quot;mental health intervention&quot;) could be delivered in different contexts and/or have different outcomes at different times. For example, we could deliver the same intervention (&quot;mental health intervention&quot;) two years after its previous delivery or in a different context (&quot;mental health intervention scenario&quot;), and this could lead to different outcomes.</rdfs:comment>
+        <rdfs:label>mental health intervention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000250 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A planned process in which a mental health intervention is applied in a given context, including intervention engagement and outcome.</obo:IAO_0000115>
+        <rdfs:comment>The &quot;mental health intervention scenario&quot; entity captures a &quot;mental health intervention&quot; within a specific context, level of engagement and outcomes. Mental health interventions (represented as &quot;mental health intervention&quot;) could be delivered in different contexts and/or have different outcomes at different times. For example, we could deliver the same intervention (&quot;mental health intervention&quot;) two years after its previous delivery or in a different context (&quot;mental health intervention scenario&quot;), and this could lead to different outcomes.</rdfs:comment>
+        <rdfs:label>mental health intervention scenario</rdfs:label>
+        <ontologies:GMHOR_0000002>planned</ontologies:GMHOR_0000002>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000251 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A history that is of a population.</obo:IAO_0000115>
+        <rdfs:comment> experiences can be captured as &apos;personal history part&apos;.</rdfs:comment>
+        <rdfs:comment>is an aggregate of personal history</rdfs:comment>
+        <rdfs:label>population history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000252 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000252">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An object aggregate of entities that are not dependent on the intervention but may influence the effect of an intervention on its outcome.</obo:IAO_0000115>
+        <obo:IAO_0000119>BCIO:005000</obo:IAO_0000119>
+        <rdfs:label>context of experience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000253 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000253">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An object aggregate of entities that are not dependent on the intervention but may influence the effect of an intervention on its outcome.</obo:IAO_0000115>
+        <obo:IAO_0000119>BCIO:005000</obo:IAO_0000119>
+        <rdfs:label>intervention context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000254 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000254">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>The aggregate of processes taking place at the same time as an intervention.</obo:IAO_0000115>
+        <obo:IAO_0000119>BCIO:047000</obo:IAO_0000119>
+        <rdfs:label>intervention temporal context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000260 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000260"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A plan that is realized in a mental health intervention scenario process.</obo:IAO_0000115>
+        <obo:IAO_0000119>BCIO:028000</obo:IAO_0000119>
+        <rdfs:comment>This entity is intended to represent the planned content or delivery of an intervention, whereas the entity &quot;mental health intervention scenario&quot; refers to the intervention as it was actually implemented. Distinguishing between these two entities allows for the assessment of intervention fidelity.</rdfs:comment>
+        <rdfs:label>mental health intervention scenario plan</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
