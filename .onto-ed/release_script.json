@@ -1,7 +1,7 @@
 {
   "iri_prefix": "https://galenos.org.uk/ontologies/",
   "short_repository_name": "GMHO",
-  "full_repository_name": "b-gehrke/mental-health-ontology",
+  "full_repository_name": "galenos-project/mental-health-ontology",
   "external": {
     "sources": [
       {
