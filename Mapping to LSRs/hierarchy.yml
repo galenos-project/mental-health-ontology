@@ -677,7 +677,7 @@
         - Mean baseline prolactin
         - Number of participants with baseline evaluation of prolactin
         children:
-        - key: OBI:0000679,GMHO:0000227
+        - key: OBI:0000679,IAO:0000003
           variables:
           - Mean baseline prolactin
           - Scale for prolactin
@@ -694,7 +694,7 @@
         - key: GMHO:0000206
           variables:
           - Number of participants with post-intervention evaluation on prolactin
-        - key: OBI:0000679,GMHO:0000227
+        - key: OBI:0000679,IAO:0000003
           variables:
           - Mean post-intervention prolactin
           - Scale for prolactin
@@ -704,9 +704,6 @@
         - key: GMHO:0000256
           variables:
           - 'Data type: endpoint vs. baseline difference in prolactin measurement'        
-      - key: GMHO:0000227
-        variables:
-        - Scale for prolactin
   - key: GMHO:0000067
     children:
     - key: GMHO:0000209
