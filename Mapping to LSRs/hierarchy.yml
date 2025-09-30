@@ -186,15 +186,15 @@
           symptom
     - key: GMHO:0000238
       variables:
-      - Number of participants reporting post-intervention anxiety
-      - Number of participants with post-intervention evaluation on anxiety
+      - Number of participants reporting post-intervention anxiousness
+      - Number of participants with post-intervention evaluation on anxiousness
       children:
       - key: GMHO:0000214
         variables:
-        - Number of participants reporting post-intervention anxiety
+        - Number of participants reporting post-intervention anxiousness
       - key: GMHO:0000206
         variables:
-        - Number of participants with post-intervention evaluation on anxiety
+        - Number of participants with post-intervention evaluation on anxiousness
     - key: GMHO:0000229
       variables:
       - Number of participants reporting post-intervention sedation
