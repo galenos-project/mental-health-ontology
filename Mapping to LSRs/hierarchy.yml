@@ -1,6 +1,6 @@
 - key: BCIO:015095
   children:
-  - key: population characteristic
+  - key: BCIO:050978
     children: 
     - key: BCIO:015249,BCIO:015360
       children:
