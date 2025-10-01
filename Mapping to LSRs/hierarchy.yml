@@ -453,7 +453,7 @@
         variables:
         - 'Data type: endpoint vs. baseline difference in depression symptom severity'
         - Mean post-intervention depression
-        - Number of participants with post-intervention measurements for depression
+        - Number of participants with post-intervention evaluation on depression
         - Standard deviation of post-intervention depression
         children:
         - key: GMHO:0000206
