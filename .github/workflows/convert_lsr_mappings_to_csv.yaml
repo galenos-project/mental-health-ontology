@@ -1,7 +1,5 @@
 on:
   push:
-    branches:
-      - main
     paths:
       - "Mapping to LSRs/Mental Health Ontology mapping to LSRs.xlsx"
 permissions:
