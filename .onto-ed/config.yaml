@@ -9,6 +9,8 @@ indexed_files:
   effects.xlsx
 - Intervention content and delivery/Intervention content and delivery.xlsx
 - Research methods/Research methods.xlsx
+- UpperLevel/GMHO_Upper_Rels.xlsx
+- UpperLevel/GMHO_Upper_Defs.xlsx
 main_branch: main
 prefixes:
   ADDICTO: http://addictovocab.org/ADDICTO_
