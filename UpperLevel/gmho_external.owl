@@ -1092,17 +1092,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015249 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015249">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015248"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A biological sex population statistic that is the percentage of people that have a biological sex in the population.</obo:IAO_0000115>
-        <rdfs:label>percentage biological sex population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015326 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015326">
@@ -1110,17 +1099,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A population statistic about female biological sex.</obo:IAO_0000115>
         <rdfs:label>female biological sex population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015327 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015327">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015326"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A female biological sex population statistic that is the percentage of people that have a female biological sex in the population.</obo:IAO_0000115>
-        <rdfs:label>percentage female biological sex population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -1147,17 +1125,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015330 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015330">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015329"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A female gender population statistic that is the percentage of people that have a female gender in the population.</obo:IAO_0000115>
-        <rdfs:label>percentage female gender population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015331 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015331">
@@ -1176,17 +1143,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A population statistic about gender identity.</obo:IAO_0000115>
         <rdfs:label>gender identity population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015360 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015360">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015359"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A gender identity population statistic that is the percentage of people that have a gender identity in the population.</obo:IAO_0000115>
-        <rdfs:label>percentage gender identity population statistic</rdfs:label>
     </owl:Class>
     
 
