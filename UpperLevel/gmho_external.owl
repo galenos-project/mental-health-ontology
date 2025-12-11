@@ -1092,6 +1092,28 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015249 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015249">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015248"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A biological sex population statistic that is the percentage of people that have a biological sex in the population.</obo:IAO_0000115>
+        <rdfs:label>percentage biological sex population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015320 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015320">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about family member.</obo:IAO_0000115>
+        <rdfs:label>family member population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015326 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015326">
@@ -1103,13 +1125,13 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015328 -->
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015327 -->
 
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015328">
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015327">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015326"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A female biological sex population statistic that is the proportion of people that have a female biological sex in the population.</obo:IAO_0000115>
-        <rdfs:label>proportion female biological sex population statistic</rdfs:label>
+        <obo:IAO_0000115>A female biological sex population statistic that is the percentage of people that have a female biological sex in the population.</obo:IAO_0000115>
+        <rdfs:label>percentage female biological sex population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -1125,13 +1147,35 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015331 -->
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015330 -->
 
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015331">
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015330">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015329"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A female gender population statistic that is the proportion of people that have a female gender in the population.</obo:IAO_0000115>
-        <rdfs:label>proportion female gender population statistic</rdfs:label>
+        <obo:IAO_0000115>A female gender population statistic that is the percentage of people that have a female gender in the population.</obo:IAO_0000115>
+        <rdfs:label>percentage female gender population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015332 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015332">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015350"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about foster brother.</obo:IAO_0000115>
+        <rdfs:label>foster brother population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015350 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015350">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015716"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about foster sibling.</obo:IAO_0000115>
+        <rdfs:label>foster sibling population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -1143,6 +1187,17 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A population statistic about gender identity.</obo:IAO_0000115>
         <rdfs:label>gender identity population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015360 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015360">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015359"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A gender identity population statistic that is the percentage of people that have a gender identity in the population.</obo:IAO_0000115>
+        <rdfs:label>percentage gender identity population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -1180,6 +1235,17 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015716 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015716">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015320"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about sibling.</obo:IAO_0000115>
+        <rdfs:label>sibling population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_037000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_037000">
@@ -1195,10 +1261,10 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://humanbehaviourchange.org/ontology/BCIO_039000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_039000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000112>Includes individual human behaviour, mental activity and physiological activity. Also includes undesirable outcomes, such as treatment side effects, and unintended negative consequences of the intervention.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A process that is influenced by an intervention.</obo:IAO_0000115>
+        <obo:IAO_0000115>An entity that is influenced by an intervention</obo:IAO_0000115>
         <rdfs:label>intervention outcome</rdfs:label>
     </owl:Class>
     
