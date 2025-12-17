@@ -18,7 +18,7 @@
      xmlns:ontologies="https://galenos.org.uk/ontologies/"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="https://galenos.org.uk/ontologies/gmho.owl">
-        <owl:versionIRI rdf:resource="https://galenos.org.uk/ontologies/gmho.owl/2025-07-15"/>
+        <owl:versionIRI rdf:resource="https://galenos.org.uk/ontologies/gmho.owl/2025-12-17"/>
     </owl:Ontology>
     
 
@@ -181,6 +181,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://purl.obolibrary.org/obo/iao.owl</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The official definition.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://purl.obolibrary.org/obo/iao.owl</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -293,13 +299,16 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
         <obo:IAO_0000111>term tracker item</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">term tracker item</obo:IAO_0000111>
         <obo:IAO_0000112>the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115>An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
         <obo:IAO_0000117>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
         <oboInOwl:hasDbXref>IAO:0000233</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
@@ -482,6 +491,18 @@ Add as annotation triples in the granting ontology</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
+        <oboInOwl:hasDbXref>http://purl.org/dc/terms/contributor</oboInOwl:hasDbXref>
+        <oboInOwl:id>dc-contributor</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-contributor</oboInOwl:shorthand>
+        <rdfs:label>contributor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/terms/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
@@ -571,7 +592,12 @@ Add as annotation triples in the granting ontology</obo:IAO_0000115>
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <obo:IAO_0000112>disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) &quot;NCIT:C41009&quot;^^xsd:string</obo:IAO_0000112>
+        <obo:IAO_0000115>An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/123"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
         <rdfs:label>database_cross_reference</rdfs:label>
+        <rdfs:label>has cross-reference</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -584,6 +610,7 @@ Add as annotation triples in the granting ontology</obo:IAO_0000115>
         <obo:IAO_0000115>Exact synonym.</obo:IAO_0000115>
         <obo:IAO_0000115>Fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software.</obo:IAO_0000115>
         <obo:IAO_0000115>Synonym of the term.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</obo:IAO_0000233>
         <oboInOwl:hasExactSynonym>FULL_SYN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Synonym with Source Data</oboInOwl:hasExactSynonym>
@@ -695,11 +722,11 @@ Add as annotation triples in the granting ontology</obo:IAO_0000115>
 
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
         <obo:IAO_0000115>Comment.</obo:IAO_0000115>
         <rdfs:label>comment</rdfs:label>
         <rdfs:label xml:lang="en">comment</rdfs:label>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -711,10 +738,10 @@ Add as annotation triples in the granting ontology</obo:IAO_0000115>
 
     <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
         <obo:IAO_0000589>is defined by</obo:IAO_0000589>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema.owl"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000589"/>
@@ -726,20 +753,14 @@ Add as annotation triples in the granting ontology</obo:IAO_0000115>
 
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <obo:IAO_0000111>label</obo:IAO_0000111>
         <obo:IAO_0000115>A human readable name for this class.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">A human-readable name for the subject.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema.owl"/>
         <rdfs:label>label</rdfs:label>
         <rdfs:label xml:lang="en">label</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A human readable name for this class.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>url:http://www.w3.org/2000/01/rdf-schema#label</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -747,12 +768,18 @@ Add as annotation triples in the granting ontology</obo:IAO_0000115>
         <oboInOwl:hasDbXref>url:http://www.w3.org/2000/01/rdf-schema#label</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.w3.org/TR/owl-guide/</oboInOwl:hasDbXref>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A human readable name for this class.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www.w3.org/2000/01/rdf-schema#label</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
         <oboInOwl:hasDbXref>http://www.w3.org/2000/01/rdf-schema#seeAlso</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>spatial</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
@@ -760,13 +787,7 @@ Add as annotation triples in the granting ontology</obo:IAO_0000115>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>seeAlso</oboInOwl:shorthand>
         <rdfs:label>see also</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#deprecated -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
+    </rdf:Description>
     
 
 
@@ -914,8 +935,19 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000117">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000115>Inverse of occurrent_part_of which is defined as: b occurrent_part_of c =Def. b is a part of c and b and c are occurrents.</obo:IAO_0000115>
         <rdfs:label>has process part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000119 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000119">
+        <obo:IAO_0000115>Inverse of process_profile_of.</obo:IAO_0000115>
+        <rdfs:label>has process attribute</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -937,6 +969,34 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
         <rdfs:label>is about</rdfs:label>
         <rdfs:label xml:lang="en">is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115>A relation between a continuant and a process, in which the continuant is somehow involved in the process.</obo:IAO_0000115>
+        <rdfs:label>participates in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000111 xml:lang="en">has participant</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this blood coagulation has participant this blood clot</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this investigation has participant this investigator</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this process has participant this input material (or this output material)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between a process and a continuant, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">has_participant</obo:IAO_0000118>
+        <terms:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</terms:source>
+        <rdfs:label xml:lang="en">has participant</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -973,6 +1033,36 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000118>consumes</obo:IAO_0000118>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <rdfs:label xml:lang="en">has input</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Has_input</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002234 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:IAO_0000115>P has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p. (occurrent/continuant)</obo:IAO_0000115>
+        <rdfs:label>has output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002323 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002323">
@@ -986,9 +1076,26 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+    <!-- https://galenos.org.uk/ontologies/GMHOR_0000003 -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:ObjectProperty rdf:about="https://galenos.org.uk/ontologies/GMHOR_0000003">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000125"/>
+        <rdfs:range rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_041000"/>
+        <obo:IAO_0000115>A relation that holds between a research study and the human population that it is investigating.</obo:IAO_0000115>
+        <rdfs:label>investigates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHOR_0000004 -->
+
+    <owl:ObjectProperty rdf:about="https://galenos.org.uk/ontologies/GMHOR_0000004">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000268"/>
+        <obo:IAO_0000115>A relationship that specifies the context in which a process happens.</obo:IAO_0000115>
+        <rdfs:label>has context</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -1078,12 +1185,29 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015161">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
-        <obo:IAO_0000112>sum of multiple experienced events</obo:IAO_0000112>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050487"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A history that is of a person.</obo:IAO_0000115>
+        <obo:IAO_0000118>sum of multiple experienced events</obo:IAO_0000118>
         <rdfs:comment>A person&apos;s history includes the sum of their experiences, which can include experiences relating to their cultural, social and economic context.</rdfs:comment>
         <rdfs:label>personal history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015248 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015248">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about biological sex.</obo:IAO_0000115>
+        <rdfs:label>biological sex population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -1091,13 +1215,36 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015249 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015249">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015248"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A biological sex population statistic that is the percentage of people that have a biological sex in the population.</obo:IAO_0000115>
         <obo:IAO_0000115>The aggregate of biological sex in a population.</obo:IAO_0000115>
         <rdfs:label>biological sex population statistic</rdfs:label>
+        <rdfs:label>percentage biological sex population statistic</rdfs:label>
         <ontologies:GMHOR_0000002>sex</ontologies:GMHOR_0000002>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015320 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015320">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about family member.</obo:IAO_0000115>
+        <rdfs:label>family member population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015326 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015326">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015248"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about female biological sex.</obo:IAO_0000115>
+        <rdfs:label>female biological sex population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -1106,11 +1253,13 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015327">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015249"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015326"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A female biological sex population statistic that is the percentage of people that have a female biological sex in the population.</obo:IAO_0000115>
         <obo:IAO_0000115>The aggregate of female biological sex in a population.</obo:IAO_0000115>
         <rdfs:label>female biological sex population statistic</rdfs:label>
+        <rdfs:label>percentage female biological sex population statistic</rdfs:label>
         <ontologies:GMHOR_0000001>LSR 3</ontologies:GMHOR_0000001>
         <ontologies:GMHOR_0000002>female sex</ontologies:GMHOR_0000002>
     </owl:Class>
@@ -1121,9 +1270,12 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015329">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015327"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015359"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about female gender.</obo:IAO_0000115>
         <obo:IAO_0000115>The proportion of female biological sex in a population.</obo:IAO_0000115>
+        <rdfs:label>female gender population statistic</rdfs:label>
         <rdfs:label>proportion female biological sex population statistic</rdfs:label>
         <ontologies:GMHOR_0000001>LSR 1</ontologies:GMHOR_0000001>
         <ontologies:GMHOR_0000002>proportion of females</ontologies:GMHOR_0000002>
@@ -1134,12 +1286,14 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015330 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015330">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015329"/>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015360"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A female gender population statistic that is the percentage of people that have a female gender in the population.</obo:IAO_0000115>
         <obo:IAO_0000115>The aggregate of female gender in a population.</obo:IAO_0000115>
         <rdfs:label>female gender population statistic</rdfs:label>
+        <rdfs:label>percentage female gender population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -1148,10 +1302,35 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015332">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015330"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015350"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about foster brother.</obo:IAO_0000115>
         <obo:IAO_0000115>The proportion of female gender in a population.</obo:IAO_0000115>
+        <rdfs:label>foster brother population statistic</rdfs:label>
         <rdfs:label>proportion female gender population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015350 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015350">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015716"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about foster sibling.</obo:IAO_0000115>
+        <rdfs:label>foster sibling population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015359 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015359">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about gender identity.</obo:IAO_0000115>
+        <rdfs:label>gender identity population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -1159,12 +1338,24 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015360 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015360">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015359"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A gender identity population statistic that is the percentage of people that have a gender identity in the population.</obo:IAO_0000115>
         <obo:IAO_0000115>The aggregate of gender identity in a population.</obo:IAO_0000115>
         <rdfs:label>gender identity population statistic</rdfs:label>
+        <rdfs:label>percentage gender identity population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015414 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015414">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about human age.</obo:IAO_0000115>
+        <rdfs:label>human age population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -1172,12 +1363,13 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015415 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015415">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015414"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A human age population statistic that is the mean value of human age in the population.</obo:IAO_0000115>
         <obo:IAO_0000115>The aggregate of human age in a population.</obo:IAO_0000115>
         <rdfs:label>human age population statistic</rdfs:label>
+        <rdfs:label>mean human age population statistic</rdfs:label>
         <ontologies:GMHOR_0000001>LSR 1</ontologies:GMHOR_0000001>
         <ontologies:GMHOR_0000002>age</ontologies:GMHOR_0000002>
     </owl:Class>
@@ -1190,9 +1382,22 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015415"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A human age population statistic that is the minimum value of human age in the population.</obo:IAO_0000115>
         <obo:IAO_0000115>The mean of human age in a population.</obo:IAO_0000115>
         <rdfs:label>mean human age population statistic</rdfs:label>
+        <rdfs:label>minimum human age population statistic</rdfs:label>
         <ontologies:GMHOR_0000002>mean age</ontologies:GMHOR_0000002>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015716 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015716">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015320"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about sibling.</obo:IAO_0000115>
+        <rdfs:label>sibling population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -1213,11 +1418,12 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://humanbehaviourchange.org/ontology/BCIO_039000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_039000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000112>Includes individual human behaviour, mental activity and physiological activity. Also includes undesirable outcomes, such as treatment side effects, and unintended negative consequences of the intervention.</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A process that is influenced by an intervention.</obo:IAO_0000115>
+        <obo:IAO_0000115>An entity that is influenced by an intervention</obo:IAO_0000115>
+        <obo:IAO_0000115>An entity that is influenced by an intervention.</obo:IAO_0000115>
         <rdfs:label>intervention outcome</rdfs:label>
         <ontologies:GMHOR_0000001>LSR 3</ontologies:GMHOR_0000001>
     </owl:Class>
@@ -1240,11 +1446,23 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_041000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000251"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>target population</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An object aggregate that consists of two or more people.</obo:IAO_0000115>
-        <obo:IAO_0000118>target population</obo:IAO_0000118>
-        <rdfs:comment>This entity represents any group consisting of two or more individuals. It could range for example from small groups, neighbourhoods, and organisations to entire national populations.</rdfs:comment>
+        <rdfs:comment>This entity represents any group consisting of two or more people. It could range for example from small groups, neighbourhoods, and organisations to entire national populations.</rdfs:comment>
         <rdfs:label>human population</rdfs:label>
     </owl:Class>
     
@@ -1307,6 +1525,12 @@ intervention content communication process (BCIO:044001): A communication that t
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_045000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000119"/>
+                <owl:someValuesFrom rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000246"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A planned process by which intervention content is delivered.</obo:IAO_0000115>
@@ -1350,11 +1574,17 @@ The definition of &quot;intervention delivery&quot; states that it is &quot;a pl
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050487">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000112>experienced event</obo:IAO_0000112>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://galenos.org.uk/ontologies/GMHOR_0000004"/>
+                <owl:someValuesFrom rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000252"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process that is part of a personal history.</obo:IAO_0000115>
         <obo:IAO_0000115>A process that is part of a personal history.</obo:IAO_0000115>
+        <obo:IAO_0000118>experienced event</obo:IAO_0000118>
         <rdfs:label>personal history part</rdfs:label>
     </owl:Class>
     
@@ -1364,6 +1594,7 @@ The definition of &quot;intervention delivery&quot; states that it is &quot;a pl
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050916">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_040000"/>
+        <obo:IAO_0000112>attendance to intervention sessions, participation in intervention activities, emotionally engaging with intervention content</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An individual human activity of an intervention participant within one or more parts of the intervention.</obo:IAO_0000115>
@@ -1373,11 +1604,25 @@ The definition of &quot;intervention delivery&quot; states that it is &quot;a pl
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050976 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050976">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item about the number of people in a population.</obo:IAO_0000115>
+        <rdfs:label>number of people in a population</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050978 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050978">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000112>Percentage of highly educated individuals in a population. 
+Mean age in a population.</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A data item that is about the number or extent of something in a population.</obo:IAO_0000115>
         <rdfs:label>population statistic</rdfs:label>
     </owl:Class>
@@ -1387,7 +1632,6 @@ The definition of &quot;intervention delivery&quot; states that it is &quot;a pl
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:BFO_0000179>entity</obo:BFO_0000179>
         <obo:BFO_0000180>Entity</obo:BFO_0000180>
         <obo:IAO_0000111 xml:lang="en">entity</obo:IAO_0000111>
@@ -1437,7 +1681,6 @@ The definition of &quot;intervention delivery&quot; states that it is &quot;a pl
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:BFO_0000179>continuant</obo:BFO_0000179>
         <obo:BFO_0000180>Continuant</obo:BFO_0000180>
         <obo:IAO_0000111 xml:lang="en">continuant</obo:IAO_0000111>
@@ -1863,7 +2106,6 @@ The definition of &quot;intervention delivery&quot; states that it is &quot;a pl
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:BFO_0000179>sdc</obo:BFO_0000179>
         <obo:BFO_0000180>SpecificallyDependentContinuant</obo:BFO_0000180>
         <obo:IAO_0000111 xml:lang="en">specifically dependent continuant</obo:IAO_0000111>
@@ -2133,6 +2375,7 @@ The definition of &quot;intervention delivery&quot; states that it is &quot;a pl
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Material entities (continuants) can preserve their identity even while gaining and losing material parts. Continuants are contrasted with occurrents, which unfold themselves in successive temporal parts or phases [60</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Elucidation: An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
@@ -2551,7 +2794,6 @@ Request that IAO either clarify these or change definitions not to use them</rdf
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000111 xml:lang="en">measurement datum</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Examples of measurement data are the recoding of the weight of a mouse as {40,mass,&quot;grams&quot;}, the recording of an observation of the behavior of the mouse {,process,&quot;agitated&quot;}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
@@ -2595,6 +2837,12 @@ Request that IAO either clarify these or change definitions not to use them</rdf
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000087"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015161"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An extended organism that is a member of the species Homo sapiens.</obo:IAO_0000115>
         <obo:IAO_0000118>person</obo:IAO_0000118>
@@ -2665,11 +2913,35 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBA_0100003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBA_0100003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBA_0000001"/>
+        <obo:IAO_0000115>The quality of a anatomical entity.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>quality of anatomical entity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>oba</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>OBA:0100003</oboInOwl:id>
+        <rdfs:label>anatomical entity attribute</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_0100003"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The quality of a anatomical entity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>obo:oba/patterns/entity_attribute_part_of</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_0100003"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>quality of anatomical entity</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>obo:oba/patterns/entity_attribute_part_of</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBA_0100004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBA_0100004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBA_0000001"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <obo:IAO_0000115>The quality of a chemical entity.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>quality of chemical entity</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>oba</oboInOwl:hasOBONamespace>
@@ -2714,52 +2986,30 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBA_1000947 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBA_1000947">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBA_0100004"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000070"/>
-        <obo:IAO_0000115>The amount of a nitrogen molecular entity.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>amount of nitrogen molecular entity</oboInOwl:hasExactSynonym>
-        <rdfs:label>nitrogen molecular entity amount</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_1000947"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The amount of a nitrogen molecular entity.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>AUTO:patterns/patterns/entity_attribute</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_1000947"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>amount of nitrogen molecular entity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>AUTO:patterns/patterns/entity_attribute</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBA_1000952 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBA_1000952">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBA_VT0010120"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000070"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>The amount of a prolactin when measured in anatomical entity.</obo:IAO_0000115>
         <obo:IAO_0000115>The amount of a prolactin.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>amount of prolactin</oboInOwl:hasExactSynonym>
-        <rdfs:label>prolactin amount</rdfs:label>
+        <terms:contributor>https://orcid.org/0000-0001-8314-2140</terms:contributor>
+        <oboInOwl:hasExactSynonym>anatomical entity prolactin amount</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>prolactin amount</oboInOwl:hasExactSynonym>
+        <rdfs:label>prolactin level</rdfs:label>
         <ontologies:GMHOR_0000001>LSR 3</ontologies:GMHOR_0000001>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_1000952"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The amount of a prolactin.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>AUTO:patterns/patterns/entity_attribute</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The amount of a prolactin when measured in anatomical entity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>AUTO:patterns/patterns/entity_attribute_location</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_1000952"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>amount of prolactin</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>AUTO:patterns/patterns/entity_attribute</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>anatomical entity prolactin amount</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>AUTO:patterns/patterns/entity_attribute_location</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2767,23 +3017,25 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <!-- http://purl.obolibrary.org/obo/OBA_VT0010120 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBA_VT0010120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBA_0100003"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBA_0100005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBA_1000947"/>
-        <obo:IAO_0000115>The amount of a protein.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>amount of protein</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000070"/>
+        <obo:IAO_0000115>The amount of a protein when measured in anatomical entity.</obo:IAO_0000115>
+        <terms:contributor>https://orcid.org/0000-0001-8314-2140</terms:contributor>
+        <oboInOwl:hasExactSynonym>anatomical entity protein amount</oboInOwl:hasExactSynonym>
         <rdfs:label>protein amount</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_VT0010120"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The amount of a protein.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>AUTO:patterns/patterns/entity_attribute</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The amount of a protein when measured in anatomical entity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>AUTO:patterns/patterns/entity_attribute_location</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_VT0010120"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>amount of protein</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>AUTO:patterns/patterns/entity_attribute</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>anatomical entity protein amount</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>AUTO:patterns/patterns/entity_attribute_location</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2822,7 +3074,6 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <!-- http://purl.obolibrary.org/obo/OBCS_0000218 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000218">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000233"/>
         <obo:IAO_0000115>A data item that is derived from a statistical data analysis.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Yongqun He, Marcy Harris, Asiyah Yu Lin</obo:IAO_0000117>
@@ -2837,7 +3088,6 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <!-- http://purl.obolibrary.org/obo/OBCS_0000220 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000220">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000218"/>
         <obo:IAO_0000115>A data item that is derived from an inferential statistical data analysis.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
@@ -2863,7 +3113,6 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <obo:IAO_0000111>planned process</obo:IAO_0000111>
@@ -2892,7 +3141,6 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0000071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000071">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
         <obo:IAO_0000111 xml:lang="en">quantitative confidence value</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
@@ -3170,8 +3418,13 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/SEPIO_0000125 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000125">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://galenos.org.uk/ontologies/GMHOR_0000003"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_041000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A planned process that executes some study design or protocol to generate scientific data that is interpreted to test or generate a hypothesis.</obo:IAO_0000115>
         <obo:SEPIO_0000061>Explore the classification of study types here as a possibility to implement in SEPIO. 
@@ -3337,7 +3590,6 @@ http://methods.sagepub.com/reference/encyc-of-research-design/n435.xml</obo:IAO_
     <!-- http://www.ebi.ac.uk/efo/EFO_0000001 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000001">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115>An experimental factor in Array Express which are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This upper level class is really used to give a root class from which applications can rely on and not be tied to upper ontology classses which do change.</obo:IAO_0000115>
         <obo:IAO_0000117>Helen Parkinson</obo:IAO_0000117>
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
@@ -3390,7 +3642,6 @@ http://methods.sagepub.com/reference/encyc-of-research-design/n435.xml</obo:IAO_
     <!-- http://www.ebi.ac.uk/efo/EFO_0007003 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0007003">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115>quantification of prolactin in a sample</obo:IAO_0000115>
         <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/OBA_1000952</obo:IAO_0100001>
@@ -3437,6 +3688,18 @@ http://methods.sagepub.com/reference/encyc-of-research-design/n435.xml</obo:IAO_
     
 
 
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000004 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000268"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A material entity that is not dependent on a process but may influence the effect of the process on its outcome.</obo:IAO_0000115>
+        <rdfs:label>material context of process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://galenos.org.uk/ontologies/GMHO_0000005 -->
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000005">
@@ -3446,6 +3709,19 @@ http://methods.sagepub.com/reference/encyc-of-research-design/n435.xml</obo:IAO_
         <obo:IAO_0000119>inspired by BCIO:008560</obo:IAO_0000119>
         <rdfs:label>intervention duration</rdfs:label>
         <ontologies:GMHOR_0000001>LSR 3</ontologies:GMHOR_0000001>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000006 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000268"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An occurrent that is not dependent on a process but may influence the effect of the process on its outcome.</obo:IAO_0000115>
+        <rdfs:comment>This entity includes time periods, events, etc.</rdfs:comment>
+        <rdfs:label>temporal context of process</rdfs:label>
     </owl:Class>
     
 
@@ -3773,9 +4049,9 @@ Based on http://purl.obolibrary.org/obo/OAE_0000581&quot;</obo:IAO_0000119>
     <!-- https://galenos.org.uk/ontologies/GMHO_0000152 -->
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000152">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050976"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A data item that is about the number of participants in an study or part of a study at a timepoint.</obo:IAO_0000115>
+        <obo:IAO_0000115>A number of people in a population that is about the number of participants in an study or part of a study at a timepoint.</obo:IAO_0000115>
         <rdfs:label>number of study participants</rdfs:label>
         <ontologies:GMHOR_0000001>LSR 3</ontologies:GMHOR_0000001>
     </owl:Class>
@@ -3939,7 +4215,7 @@ Based on http://purl.obolibrary.org/obo/OAE_0000581&quot;</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process that is causally active in the relationship between an intervention scenario and its intervention outcome.</obo:IAO_0000115>
-        <rdfs:comment>For a construct to be a mechanism of action, it must be causally active in bringing about the intervention’s effect on its outcome. However, interventions are typically designed based on hypothesised mechanisms of action, which may or may not hold true depending on factors such as behaviour type, population, and setting. 
+        <rdfs:comment>For a construct to be a mechanism of action, it must be causally active in bringing about the intervention’s effect on its outcome. However, interventions are typically designed based on hypothesised mechanisms of action, which may or may not hold true depending on factors such as population and setting. 
 The ontology provides a structured framework for organising mechanisms of action but does not replace the need for empirical validation. The ontology does not specify the level of evidence required to confirm that a hypothesised mechanism has been realised. In other words, the ontology itself does not make causal inferences about specific mechanisms. 
 When using the ontology, researchers can code hypothesised mechanisms within the subclasses of “intervention mechanism of action”. The assessment of whether sufficient evidence supports a causal relationship occurs at the annotation level, where empirical data validate the connections between constructs. 
 The relationship between intervention techniques, mechanisms, and outcomes is often complex and non-linear. Multiple mechanisms of action may interact in various ways, including combinations, sequences, or feedback loops.</rdfs:comment>
@@ -4085,9 +4361,9 @@ The relationship between intervention techniques, mechanisms, and outcomes is of
     <!-- https://galenos.org.uk/ontologies/GMHO_0000213 -->
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000213">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015327"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050976"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The number of female biological sex in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A number of people in a population that is about the number of people that have female biological sex.</obo:IAO_0000115>
         <rdfs:label>number of female biological sex</rdfs:label>
         <ontologies:GMHOR_0000001>LSR 3</ontologies:GMHOR_0000001>
         <ontologies:GMHOR_0000002>number of females</ontologies:GMHOR_0000002>
@@ -4397,6 +4673,18 @@ The relationship between intervention techniques, mechanisms, and outcomes is of
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000241">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_046000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000247"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000119"/>
+                <owl:someValuesFrom rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000242"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An intervention content that is part of a mental health intervention.</obo:IAO_0000115>
         <rdfs:label>mental health intervention content</rdfs:label>
@@ -4415,7 +4703,7 @@ The relationship between intervention techniques, mechanisms, and outcomes is of
 
 Intervention dose refers to the intensity or amount of an intervention, which is about the content of an intervention. In contrast, an intervention&apos;s schedule of delivery is about the temporal aspects of the intervention. There is some overlap between the entities &quot;&quot;intervention dose&quot;&quot; and &quot;&quot;intervention schedule of delivery&quot;&quot;. For example, a more frequent intervention schedule with specific doses would suggest a higher overall dose of the intervention. However, &quot;&quot;intervention dose&quot;&quot; can capture concepts that are not directly relevant to the temporal organisation of the intervention, such as overall number of intervention strategies and drug dose.&quot;</rdfs:comment>
         <rdfs:comment>Intervention dose can capture the intensity of any intervention, including social, physical, psychological and pharmacological interventions.
-Intervention dose refers to the intensity or amount of an intervention, which is about the content of an intervention. In contrast, an intervention&apos;s schedule of delivery is about the temporal aspects of the intervention. There is some overlap between the entities &quot;intervention dose&quot; and &quot;intervention schedule of delivery&quot;. For example, a more frequent intervention schedule with specific doses would suggest a higher overall dose of the intervention. However, &quot;intervention dose&quot; can capture concepts that are not directly relevant to the temporal organisation of the intervention, such as overall number of intervention strategies and drug dose. This class intends to represent the actual dose delivered as part of an intervention, whereas the class &quot;mental health intervention scenario plan&quot; refers to the planned intervention, including the planned dose of an intervention. Distinguishing between these two classes allows for the assessment of intervention fidelity. To capture planned dose, researchers could annotate both the class &quot;intervention dose&quot; and &quot;mental health intervention scenario plan&quot;.</rdfs:comment>
+Intervention dose refers to the intensity or amount of an intervention, which is about the content of an intervention. In contrast, an intervention&apos;s schedule of delivery is about the temporal aspects of the intervention. There is some overlap between the classes &quot;intervention dose&quot; and &quot;intervention schedule of delivery&quot;. For example, a more frequent intervention schedule with specific doses would suggest a higher overall dose of the intervention. However, &quot;intervention dose&quot; can capture concepts that are not directly relevant to the temporal organisation of the intervention, such as overall number of intervention strategies and drug dose. This class intends to represent the actual dose delivered as part of an intervention, whereas the class &quot;mental health intervention scenario plan&quot; refers to the planned intervention, including the planned dose of an intervention. Distinguishing between these two classes allows for the assessment of intervention fidelity. To capture planned dose, researchers could annotate both the class &quot;intervention dose&quot; and &quot;mental health intervention scenario plan&quot;.</rdfs:comment>
         <rdfs:label>intervention dose</rdfs:label>
     </owl:Class>
     
@@ -4452,7 +4740,7 @@ Intervention dose refers to the intensity or amount of an intervention, which is
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role played by a person, population or organisation that provides an intervention.</obo:IAO_0000115>
         <obo:IAO_0000118>intervention provider</obo:IAO_0000118>
-        <rdfs:comment>The entity “intervention source” has been defined to include a person, population or organisation, as these sources can be legally accountable for an intervention. A computer program or machine cannot be held accountable in the same way. Therefore, the organisation or people that provide the computer program or machine would be considered the intervention source, where relevant. When an intervention is delivered via a computer program (e.g., an app), this can be captured in the ontology through the relevant subclasses of &quot;intervention mode of delivery&quot;.</rdfs:comment>
+        <rdfs:comment>The class “intervention source” has been defined to include a person, population or organisation, as these sources can be legally accountable for an intervention. A computer program or machine cannot be held accountable in the same way. Therefore, the organisation or people that provide the computer program or machine would be considered the intervention source, where relevant. When an intervention is delivered via a computer program (e.g., an app), this can be captured in the ontology through the relevant subclasses of &quot;intervention mode of delivery&quot;.</rdfs:comment>
         <rdfs:label>intervention source</rdfs:label>
     </owl:Class>
     
@@ -4473,9 +4761,21 @@ Intervention dose refers to the intensity or amount of an intervention, which is
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000248">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_037000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000241"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050916"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An intervention that has the aim of influencing some aspect of mental health.</obo:IAO_0000115>
-        <rdfs:comment>The &quot;mental health intervention scenario&quot; entity captures a &quot;mental health intervention&quot; within a specific context, level of engagement and outcomes. Mental health interventions (represented as &quot;mental health intervention&quot;) could be delivered in different contexts and/or have different outcomes at different times. For example, we could deliver the same intervention (&quot;mental health intervention&quot;) two years after its previous delivery or in a different context (&quot;mental health intervention scenario&quot;), and this could lead to different outcomes.</rdfs:comment>
+        <rdfs:comment>The &quot;mental health intervention scenario&quot; class captures a &quot;mental health intervention&quot; within a specific context, level of engagement and outcomes. Mental health interventions (represented as &quot;mental health intervention&quot;) could be delivered in different contexts and/or have different outcomes at different times. For example, we could deliver the same intervention (&quot;mental health intervention&quot;) two years after its previous delivery or in a different context (&quot;mental health intervention scenario&quot;), and this could lead to different outcomes.</rdfs:comment>
         <rdfs:label>mental health intervention</rdfs:label>
     </owl:Class>
     
@@ -4485,9 +4785,33 @@ Intervention dose refers to the intensity or amount of an intervention, which is
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000250">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000260"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000248"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_039000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://galenos.org.uk/ontologies/GMHOR_0000004"/>
+                <owl:someValuesFrom rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000253"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A planned process in which a mental health intervention is applied in a given context, including intervention engagement and outcome.</obo:IAO_0000115>
-        <rdfs:comment>The &quot;mental health intervention scenario&quot; entity captures a &quot;mental health intervention&quot; within a specific context, level of engagement and outcomes. Mental health interventions (represented as &quot;mental health intervention&quot;) could be delivered in different contexts and/or have different outcomes at different times. For example, we could deliver the same intervention (&quot;mental health intervention&quot;) two years after its previous delivery or in a different context (&quot;mental health intervention scenario&quot;), and this could lead to different outcomes.</rdfs:comment>
+        <obo:IAO_0000115>A planned process in which a mental health intervention is applied in a given context.</obo:IAO_0000115>
+        <rdfs:comment>The &quot;mental health intervention scenario&quot; class captures a &quot;mental health intervention&quot; within a specific context. Mental health interventions (represented as &quot;mental health intervention&quot;) could be delivered in different contexts and/or have different outcomes at different times. For example, we could deliver the same intervention (&quot;mental health intervention&quot;) two years after its previous delivery or in a different context (&quot;mental health intervention scenario&quot;), and this could lead to different outcomes.</rdfs:comment>
         <rdfs:label>mental health intervention scenario</rdfs:label>
         <ontologies:GMHOR_0000002>planned</ontologies:GMHOR_0000002>
     </owl:Class>
@@ -4510,9 +4834,9 @@ Intervention dose refers to the intensity or amount of an intervention, which is
     <!-- https://galenos.org.uk/ontologies/GMHO_0000252 -->
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000252">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000268"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An object aggregate of entities that are not dependent on the intervention but may influence the effect of an intervention on its outcome.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process context in which the process is an experience.</obo:IAO_0000115>
         <obo:IAO_0000119>BCIO:005000</obo:IAO_0000119>
         <rdfs:label>context of experience</rdfs:label>
     </owl:Class>
@@ -4522,9 +4846,15 @@ Intervention dose refers to the intensity or amount of an intervention, which is
     <!-- https://galenos.org.uk/ontologies/GMHO_0000253 -->
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000253">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000268"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015095"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An object aggregate of entities that are not dependent on the intervention but may influence the effect of an intervention on its outcome.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process context in which the process is an intervention.</obo:IAO_0000115>
         <obo:IAO_0000119>BCIO:005000</obo:IAO_0000119>
         <rdfs:label>intervention context</rdfs:label>
     </owl:Class>
@@ -4534,9 +4864,9 @@ Intervention dose refers to the intensity or amount of an intervention, which is
     <!-- https://galenos.org.uk/ontologies/GMHO_0000254 -->
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000254">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000006"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of processes taking place at the same time as an intervention.</obo:IAO_0000115>
+        <obo:IAO_0000115>A temporal context of a process where the process is the intervention.</obo:IAO_0000115>
         <obo:IAO_0000119>BCIO:047000</obo:IAO_0000119>
         <rdfs:label>intervention temporal context</rdfs:label>
     </owl:Class>
@@ -4613,7 +4943,7 @@ Intervention dose refers to the intensity or amount of an intervention, which is
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A plan that is realized in a mental health intervention scenario process.</obo:IAO_0000115>
         <obo:IAO_0000119>BCIO:028000</obo:IAO_0000119>
-        <rdfs:comment>This entity is intended to represent the planned content or delivery of an intervention, whereas the entity &quot;mental health intervention scenario&quot; refers to the intervention as it was actually implemented. Distinguishing between these two entities allows for the assessment of intervention fidelity.</rdfs:comment>
+        <rdfs:comment>This class is intended to represent the planned content or delivery of an intervention, whereas the class &quot;mental health intervention scenario&quot; refers to the intervention as it was actually implemented. Distinguishing between these two classes allows for the assessment of intervention fidelity.</rdfs:comment>
         <rdfs:label>mental health intervention scenario plan</rdfs:label>
         <ontologies:GMHOR_0000001>LSR 1</ontologies:GMHOR_0000001>
     </owl:Class>
@@ -4697,10 +5027,29 @@ Intervention dose refers to the intensity or amount of an intervention, which is
     <!-- https://galenos.org.uk/ontologies/GMHO_0000267 -->
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000267">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015330"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050976"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The number of female gender in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A number of people in a population that is about the number of people that have female gender.</obo:IAO_0000115>
         <rdfs:label>number of female gender</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000268 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000268">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://galenos.org.uk/ontologies/GMHO_0000004"/>
+                    <rdf:Description rdf:about="https://galenos.org.uk/ontologies/GMHO_0000006"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An entity that includes the material and temporal contexts that are not part of but may influence the outcome of a process.</obo:IAO_0000115>
+        <rdfs:label>process context</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
