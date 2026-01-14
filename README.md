@@ -11,6 +11,7 @@ To support this evidence integration, we are creating an ontology focused on the
 5) Intervention mechanisms and biomarkers associated with mental health outcomes.
 6) Intervention outcomes, including risk prediction and spillover effects related to mental health.
 7) Research methods relevant to mental health studies.
+
 For more details on the methodology, please access the [protocol paper](https://wellcomeopenresearch.org/articles/9-40/v3?gtmKey=GTM-5P673KJ&immUserUrl=https%3A%2F%2Fwor-proxy.f1krdev.com%2Feditor%2Fmember%2Fshow%2F&otid=23226e40-fdd0-4acd-97a3-d9bad93befed&s3BucketUrl=https%3A%2F%2Fwellcomeopenresearch-files.f1000.com&submissionUrl=%2Ffor-authors%2Fpublish-your-research&transcendEnv=cm&transcendId=ef49a3f1-d8c1-47d6-88fc-50e41130631f). 
 
 # Folder structure:
@@ -23,10 +24,14 @@ The following folders contain .xlsx files with the different ontology classes:
 6) Research methods and
 7) UpperLevel.
 
+
 The following folder contains the .xlsx file with the mapping from LSR variables to ontology classes, used to develop the Browser. In this folder you will also find the acronyms.csv file containing the acronyms used in LSR data and the hierarchy.yml file used to develop the hierarchy of classes in the Data Browser. 
+
 8) Mapping to LSRs
 
+
 These folders are used to make OWL versions of the ontology and enable the use of [OntoSpread-Ed](https://wellcomeopenresearch.org/articles/10-360) to edit it:
+
 9) .github/workflows
 10) .onto-ed
 11) inputs
