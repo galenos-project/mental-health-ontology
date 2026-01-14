@@ -38,7 +38,7 @@ These folders are used to make OWL versions of the ontology and enable the use o
 12) scripts
 
 # Download OWL file of the ontology:
-You can find the gmho.owl file in this main repository folder.
+You can find the [gmho.owl](https://github.com/galenos-project/mental-health-ontology/blob/main/gmho.owl) file in this main repository folder.
 
 # How to cite:
 When using the ontology, please cite our [protocol paper](https://wellcomeopenresearch.org/articles/9-40/v3?gtmKey=GTM-5P673KJ&immUserUrl=https%3A%2F%2Fwor-proxy.f1krdev.com%2Feditor%2Fmember%2Fshow%2F&otid=23226e40-fdd0-4acd-97a3-d9bad93befed&s3BucketUrl=https%3A%2F%2Fwellcomeopenresearch-files.f1000.com&submissionUrl=%2Ffor-authors%2Fpublish-your-research&transcendEnv=cm&transcendId=ef49a3f1-d8c1-47d6-88fc-50e41130631f)
