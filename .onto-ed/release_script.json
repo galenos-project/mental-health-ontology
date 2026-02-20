@@ -16,7 +16,7 @@
       "publish": true
     },
     "needs": [],
-    "renameTermFile": null,
+    "renameTermFile": "Upper Level BCIO/inputs/BCIO_External_Imports_New_Labels.csv",
     "addParentsFile": null
   },
   "files": {
