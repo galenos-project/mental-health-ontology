@@ -510,13 +510,7 @@ Add as annotation triples in the granting ontology</obo:IAO_0000115>
 
     <!-- http://purl.org/dc/terms/contributor -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
-        <oboInOwl:hasDbXref>http://purl.org/dc/terms/contributor</oboInOwl:hasDbXref>
-        <oboInOwl:id>dc-contributor</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>dc-contributor</oboInOwl:shorthand>
-        <rdfs:label>contributor</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
@@ -604,15 +598,18 @@ Add as annotation triples in the granting ontology</obo:IAO_0000115>
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label>has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
-        <obo:IAO_0000112>disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) &quot;NCIT:C41009&quot;^^xsd:string</obo:IAO_0000112>
-        <obo:IAO_0000115>An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.</obo:IAO_0000115>
-        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/123"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
         <rdfs:label>database_cross_reference</rdfs:label>
-        <rdfs:label>has cross-reference</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -670,6 +667,14 @@ Add as annotation triples in the granting ontology</obo:IAO_0000115>
         <owl:annotatedTarget>Name space of the ontology.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://www.geneontology.org/formats/oboInOwl#hasOBONamespace</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label>has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -2659,6 +2664,70 @@ Mean age in a population.</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CMO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:IAO_0000115>A quantification of a parameter of the chemical composition of blood.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>clinical_measurement_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>blood molecular composition measurement</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CMO:0000023</oboInOwl:id>
+        <rdfs:label>blood chemistry measurement</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000023"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A quantification of a parameter of the chemical composition of blood.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:978-0323057479</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Mosby:Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000023"/>
+        <obo:IAO_0000115>Any measurement involving the amount, composition or type of protein, the complex organic compounds containing carbon, hydrogen, oxygen, nitrogen, and sulfur consisting of alpha-amino acids joined by peptide linkages, in blood.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>total blood protein measurement</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>EFO:0004536</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0005105</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0007937</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VT:0005416</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>clinical_measurement_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CMO:0000028</oboInOwl:id>
+        <rdfs:label>blood protein measurement</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any measurement involving the amount, composition or type of protein, the complex organic compounds containing carbon, hydrogen, oxygen, nitrogen, and sulfur consisting of alpha-amino acids joined by peptide linkages, in blood.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Dorland:Dorlands_Illustrated_Medical_Dictionary--31st_Ed</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:978-1416049982</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000000"/>
+        <obo:IAO_0000115>A measurement of the blood, it&apos;s contents, cells or other factors contained within the blood.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EFO:0004503</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>hematological measurement</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>clinical_measurement_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CMO:0000035</oboInOwl:id>
+        <rdfs:label>blood measurement</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A measurement of the blood, it&apos;s contents, cells or other factors contained within the blood.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>RGD:MS</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CMO_0000230 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000230">
@@ -2695,6 +2764,29 @@ Mean age in a population.</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CMO_0000286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000286">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0001003"/>
+        <obo:IAO_0000115>Measurement of the amount in blood of a molecular chain compound composed of two or more amino acids joined by peptide bonds that is produced in one part or organ of the body and initiates or regulates the activity of an organ or a group of cells in another part of the body.</obo:IAO_0000115>
+        <oboInOwl:created_by>mshimoyama</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-06-25T12:08:08Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>EFO:0004504</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym>serum hepcidin measurement</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>clinical_measurement_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CMO:0000286</oboInOwl:id>
+        <rdfs:label>blood peptide hormone level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000286"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Measurement of the amount in blood of a molecular chain compound composed of two or more amino acids joined by peptide bonds that is produced in one part or organ of the body and initiates or regulates the activity of an organ or a group of cells in another part of the body.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Mosby:Mosbys_Medical_Dictionary--8th_Ed</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CMO_0000669 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000669">
@@ -2727,6 +2819,55 @@ Mean age in a population.</obo:IAO_0000112>
         <rdfs:comment>This is not the same term as the original &quot;heart measurement&quot;.  That term is now &quot;heart morphological measurement&quot;.</rdfs:comment>
         <rdfs:label>heart measurement</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000023"/>
+        <obo:IAO_0000115>Measurement of the amount in blood of any complex chemical substance produced in one part or organ of the body that initiates or regulates the activity of an organ or a group of cells in another part of the body.</obo:IAO_0000115>
+        <oboInOwl:created_by>JSmith</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-08-02T03:51:38Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym>hormone measurement</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>EFO:0004730</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>clinical_measurement_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CMO:0001003</oboInOwl:id>
+        <rdfs:label>blood hormone level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0001003"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Measurement of the amount in blood of any complex chemical substance produced in one part or organ of the body that initiates or regulates the activity of an organ or a group of cells in another part of the body.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Mosby:Mosbys_Medical_Dictionary--8th_Ed</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001822 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001822">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000286"/>
+        <obo:IAO_0000115>The amount of prolactin found in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them. Prolactin is a peptide hormone which is secreted by the anterior pituitary and is involved in lactation, growth regulation for tissues including cells of the immune system, and possibly supression of apoptosis. A peptide hormone is a complex organic compound that contains carbon, hydrogen, oxygen, nitrogen, and sulfur consisting of alpha-amino acids joined by peptide linkages, and that is produced in one part or organ of the body and initiates or regulates the activity of an organ or a group of cells in another part of the body.</obo:IAO_0000115>
+        <oboInOwl:created_by>JSmith</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-10-14T16:49:10Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>MESH:D011388</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VT:0005121</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>clinical_measurement_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>blood Prl level</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CMO:0001822</oboInOwl:id>
+        <rdfs:label>blood prolactin level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0001822"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The amount of prolactin found in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them. Prolactin is a peptide hormone which is secreted by the anterior pituitary and is involved in lactation, growth regulation for tissues including cells of the immune system, and possibly supression of apoptosis. A peptide hormone is a complex organic compound that contains carbon, hydrogen, oxygen, nitrogen, and sulfur consisting of alpha-amino acids joined by peptide linkages, and that is produced in one part or organ of the body and initiates or regulates the activity of an organ or a group of cells in another part of the body.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Dorland:Dorlands_Illustrated_Medical_Dictionary--31st_Ed</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:978-1416049982</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Mosby:Mosbys_Medical_Dictionary--8th_Ed</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>RGD:736187</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Saunders:Saunders_Comprehensive_Veterinary_Dictionary--3rd_Ed</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
