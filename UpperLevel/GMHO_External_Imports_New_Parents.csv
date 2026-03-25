@@ -1,4 +1,4 @@
 ID,NEW PARENT ID,Comment
 ID,SC %,
 "SEPIO:0000004,http://purl.obolibrary.org/obo/OBI_0000011,""Remove confusion about planned process (https://github.com/HumanBehaviourChangeProject/ontologies/issues/847)"""
-"CMO:0000000,http://purl.obolibrary.org/obo/IAO_0000109,""Clinical measurement"" is the highest parent-class of the following classes used for LSRs1-3 mapping: heart electrical conduction measurement, QTC interval and blood prolactin level. We want to re-organise ""clinical measurement"" under ""measurement datum"" to make sure it is interoperable with BFO"""
+"CMO:0000000,http://purl.obolibrary.org/obo/IAO_0000109,""Clinical measurement is the highest parent-class of the following classes used for LSRs1-3 mapping: heart electrical conduction measurement and QTC interval and blood prolactin level. We want to re-organise ""clinical measurement"" under ""measurement datum"" to make sure it is interoperable with BFO"""
