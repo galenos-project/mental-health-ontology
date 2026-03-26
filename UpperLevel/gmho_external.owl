@@ -508,12 +508,6 @@ Add as annotation triples in the granting ontology</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.org/dc/terms/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-    
-
-
     <!-- http://purl.org/dc/terms/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
@@ -1160,9 +1154,9 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015248 -->
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015249 -->
 
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015248">
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015249">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A population statistic about biological sex.</obo:IAO_0000115>
@@ -1171,32 +1165,10 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015249 -->
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015327 -->
 
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015249">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015248"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A biological sex population statistic that is the percentage of people that have a biological sex in the population.</obo:IAO_0000115>
-        <rdfs:label>percentage biological sex population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015320 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015320">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A population statistic about family member.</obo:IAO_0000115>
-        <rdfs:label>family member population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015326 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015326">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015248"/>
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015327">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015249"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A population statistic about female biological sex.</obo:IAO_0000115>
         <rdfs:label>female biological sex population statistic</rdfs:label>
@@ -1204,24 +1176,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015327 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015327">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015326"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A female biological sex population statistic that is the percentage of people that have a female biological sex in the population.</obo:IAO_0000115>
-        <rdfs:label>percentage female biological sex population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015329 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015329">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015359"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015327"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A population statistic about female gender.</obo:IAO_0000115>
-        <rdfs:label>female gender population statistic</rdfs:label>
+        <obo:IAO_0000115>A(n) female biological sex population statistic that is the proportion of people that have a female biological sex in the population.</obo:IAO_0000115>
+        <rdfs:label>proportion female biological sex population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -1229,10 +1190,10 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015330 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015330">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015329"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015360"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A female gender population statistic that is the percentage of people that have a female gender in the population.</obo:IAO_0000115>
-        <rdfs:label>percentage female gender population statistic</rdfs:label>
+        <obo:IAO_0000115>A population statistic about female gender.</obo:IAO_0000115>
+        <rdfs:label>female gender population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -1240,28 +1201,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015332 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015332">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015350"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015330"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A population statistic about foster brother.</obo:IAO_0000115>
-        <rdfs:label>foster brother population statistic</rdfs:label>
+        <obo:IAO_0000115>A(n) female gender population statistic that is the proportion of people that have a female gender in the population.</obo:IAO_0000115>
+        <rdfs:label>proportion female gender population statistic</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015350 -->
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015360 -->
 
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015350">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015716"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A population statistic about foster sibling.</obo:IAO_0000115>
-        <rdfs:label>foster sibling population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015359 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015359">
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015360">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A population statistic about gender identity.</obo:IAO_0000115>
@@ -1270,20 +1220,9 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015360 -->
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015415 -->
 
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015360">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015359"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A gender identity population statistic that is the percentage of people that have a gender identity in the population.</obo:IAO_0000115>
-        <rdfs:label>percentage gender identity population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015414 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015414">
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015415">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A population statistic about human age.</obo:IAO_0000115>
@@ -1292,35 +1231,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015415 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015415">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015414"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A human age population statistic that is the mean value of human age in the population.</obo:IAO_0000115>
-        <rdfs:label>mean human age population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015416 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015416">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015414"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015415"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A human age population statistic that is the minimum value of human age in the population.</obo:IAO_0000115>
-        <rdfs:label>minimum human age population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015716 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015716">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015320"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A population statistic about sibling.</obo:IAO_0000115>
-        <rdfs:label>sibling population statistic</rdfs:label>
+        <obo:IAO_0000115>A(n) human age population statistic that is the mean value of human age in the population.</obo:IAO_0000115>
+        <rdfs:label>mean human age population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -2627,6 +2544,7 @@ Mean age in a population.</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/CMO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <obo:IAO_0000115>A quantitative or qualitative value which is the result of an act of assessing a morphological or physiological state or property in a single individual or sample or a group of individuals or samples, based on direct observation or experimental manipulation.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>clinical_measurement_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CMO:0000000</oboInOwl:id>
@@ -3122,141 +3040,6 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBA_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBA_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <oboInOwl:hasOBONamespace>oba</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>OBA:0000001</oboInOwl:id>
-        <rdfs:label>biological attribute</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBA_0100003 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBA_0100003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBA_0000001"/>
-        <obo:IAO_0000115>The quality of a anatomical entity.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>quality of anatomical entity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>oba</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>OBA:0100003</oboInOwl:id>
-        <rdfs:label>anatomical entity attribute</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_0100003"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The quality of a anatomical entity.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>obo:oba/patterns/entity_attribute_part_of</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_0100003"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>quality of anatomical entity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>obo:oba/patterns/entity_attribute_part_of</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBA_0100004 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBA_0100004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBA_0000001"/>
-        <obo:IAO_0000115>The quality of a chemical entity.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>quality of chemical entity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>oba</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>OBA:0100004</oboInOwl:id>
-        <rdfs:label>chemical entity attribute</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_0100004"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The quality of a chemical entity.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>obo:oba/patterns/entity_attribute_part_of</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_0100004"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>quality of chemical entity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>obo:oba/patterns/entity_attribute_part_of</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBA_0100005 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBA_0100005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBA_0100004"/>
-        <obo:IAO_0000115>The quality of a protein.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>quality of protein</oboInOwl:hasExactSynonym>
-        <rdfs:label>protein attribute</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_0100005"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The quality of a protein.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>obo:oba/patterns/entity_attribute_part_of</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_0100005"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>quality of protein</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>obo:oba/patterns/entity_attribute_part_of</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBA_1000952 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBA_1000952">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBA_VT0010120"/>
-        <obo:IAO_0000115>The amount of a prolactin when measured in anatomical entity.</obo:IAO_0000115>
-        <terms:contributor>https://orcid.org/0000-0001-8314-2140</terms:contributor>
-        <oboInOwl:hasExactSynonym>anatomical entity prolactin amount</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>prolactin amount</oboInOwl:hasExactSynonym>
-        <rdfs:label>prolactin level</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_1000952"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The amount of a prolactin when measured in anatomical entity.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>AUTO:patterns/patterns/entity_attribute_location</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_1000952"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>anatomical entity prolactin amount</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>AUTO:patterns/patterns/entity_attribute_location</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBA_VT0010120 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBA_VT0010120">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBA_0100003"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBA_0100005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000070"/>
-        <obo:IAO_0000115>The amount of a protein when measured in anatomical entity.</obo:IAO_0000115>
-        <terms:contributor>https://orcid.org/0000-0001-8314-2140</terms:contributor>
-        <oboInOwl:hasExactSynonym>anatomical entity protein amount</oboInOwl:hasExactSynonym>
-        <rdfs:label>protein amount</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_VT0010120"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The amount of a protein when measured in anatomical entity.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>AUTO:patterns/patterns/entity_attribute_location</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBA_VT0010120"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>anatomical entity protein amount</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>AUTO:patterns/patterns/entity_attribute_location</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBCS_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000011">
@@ -3473,16 +3256,6 @@ objectives is a planned process.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PATO_0000070 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000070">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0103000"/>
-        <rdfs:comment>This term was originally named &quot;presence&quot;. It has been renamed to reduce ambiguity. Consider annotating with the reciprocal relation,PATO:0001555, has_number_of. For example, rather than E=fin ray Q=count in organism C=10, say E=organism Q=has number of E2= fin ray C=10.</rdfs:comment>
-        <rdfs:label>amount</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PATO_0000128 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000128">
@@ -3575,15 +3348,6 @@ objectives is a planned process.</obo:IAO_0000116>
         <owl:annotatedTarget>A quality which inheres in a continuant.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0103000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0103000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <rdfs:label>quantitative</rdfs:label>
-    </owl:Class>
     
 
 
