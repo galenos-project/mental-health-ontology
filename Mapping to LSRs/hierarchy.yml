@@ -57,6 +57,14 @@
     - key: GMHO:0000239
       variables:
       - Type of psychological intervention
+    - key: GMHO:0000273
+      variables:
+      - Type of bias training intervention
+    - key: GMHO:0000247
+      children:
+      - key: BCIO:050783
+        variables:
+        - Stimuli used for training
     - key: GMHO:0000242
       children:
       - key: GMHO:0000001
@@ -100,7 +108,12 @@
         variables:
         - Intervention duration (numeric value)
         - Intervention duration (unit)
+      - key: GMHO:0000274
+        variables:
+        - Number of sessions
     - key: GMHO:0000244
+      variables:
+      - Mode of delivery
     - key: GMHO:0000246
 - key: IAO:0000109
   children:
@@ -432,6 +445,43 @@
         - key: GMHO:0000208
           variables:
           - Anxiety scale directionality
+      - key: GMHO:0000272
+        children:
+        - key: GMHO:0000209
+          variables:
+          - Mean baseline social anxiety
+          - Standard deviation of baseline social anxiety
+          - Number of participants with baseline evaluation on social anxiety
+          children:
+          - key: OBI:0000679,GMHO:0000271
+            variables:
+            - Mean baseline social anxiety
+            - Social anxiety scale
+          - key: OBCS:0000077
+            variables:
+            - Standard deviation of baseline social anxiety
+          - key: GMHO:0000206
+            variables:
+            - Number of participants with baseline evaluation on social anxiety
+        - key: GMHO:0000204
+          variables:
+          - Mean post-intervention social anxiety
+          - Standard deviation of post-intervention social anxiety
+          - Number of participants with post-intervention evaluation on social anxiety
+          children:
+          - key: OBI:0000679,GMHO:0000271
+            variables:
+            - Mean post-intervention social anxiety
+            - Social anxiety scale
+          - key: OBCS:0000077
+            variables:
+            - Standard deviation of post-intervention social anxiety
+          - key: GMHO:0000206
+            variables:
+            - Number of participants with post-intervention evaluation on social anxiety
+        - key: GMHO:0000271
+          variables:
+          - Social anxiety scale
       - key: GMHO:0000210
         variables:
         - Timepoint of post-intervention anxiety measurement (weeks)
@@ -440,12 +490,16 @@
       - key: GMHO:0000209
         variables:
         - Mean baseline depression
+        - Standard deviation of baseline depression
         - Number of participants with baseline evaluation on depression
         children:
         - key: OBI:0000679,GMHO:0000223
           variables:
           - Mean baseline depression
           - Scale for depression
+        - key: OBCS:0000077
+          variables:
+          - Standard deviation of baseline depression
         - key: GMHO:0000206
           variables:
           - Number of participants with baseline evaluation on depression
@@ -786,6 +840,47 @@
         - key: GMHO:0000208
           variables:
           - Reward sensitivity scale directionality
+  - key: MF:0000041
+    children:
+    - key: BCIO:050324
+      children:
+      - key: GMHO:0000209
+        variables:
+        - Mean baseline quality of life belief
+        - Standard deviation of baseline quality of life belief
+        - Number of participants with baseline evaluation on quality of life belief
+        - Quality of life belief scale
+        children:
+        - key: OBI:0000679,GMHO:0000269
+          variables:
+          - Mean baseline quality of life belief
+          - Quality of life belief scale
+        - key: OBCS:0000077
+          variables:
+          - Standard deviation of baseline quality of life belief
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with baseline evaluation on quality of life belief
+      - key: GMHO:0000204
+        variables:
+        - Mean post-intervention quality of life belief
+        - Standard deviation of post-intervention quality of life belief
+        - Number of participants with post-intervention evaluation on quality of life belief
+        - Quality of life belief scale
+        children:
+        - key: OBI:0000679,GMHO:0000269
+          variables:
+          - Mean post-intervention quality of life belief
+          - Quality of life belief scale
+        - key: OBCS:0000077
+          variables:
+          - Standard deviation of post-intervention quality of life belief
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with post-intervention evaluation on quality of life belief
+      - key: GMHO:0000269
+        variables: 
+        - Quality of life belief scale
   - key: MF:0000020
     children:
     - key: GMHO:0000209
@@ -823,6 +918,45 @@
     - key: GMHO:0000259
       variables:
       - Scale for cognition
+    - key: BCIO:050851
+      children:
+      - key: GMHO:0000209
+        variables:
+        - Mean baseline cognitive bias
+        - Standard deviation of baseline cognitive bias
+        - Number of participants with baseline evaluation on cognitive bias
+        - Cognitive bias scale
+        children:
+        - key: OBI:0000679,GMHO:0000270
+          variables:
+          - Mean baseline cognitive bias
+          - Cognitive bias scale
+        - key: OBCS:0000077
+          variables:
+          - Standard deviation of baseline cognitive bias
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with baseline evaluation on cognitive bias
+      - key: GMHO:0000204
+        variables:
+        - Mean post-intervention cognitive bias
+        - Standard deviation of post-intervention cognitive bias
+        - Number of participants with post-intervention evaluation on cognitive bias
+        - Cognitive bias scale
+        children:
+        - key: OBI:0000679,GMHO:0000270
+          variables:
+          - Mean post-intervention cognitive bias
+          - Cognitive bias scale
+        - key: OBCS:0000077
+          variables:
+          - Standard deviation of post-intervention cognitive bias
+        - key: GMHO:0000206
+          variables:
+          - Number of participants with post-intervention evaluation on cognitive bias
+      - key: GMHO:0000270
+        variables:
+        - Cognitive bias scale
   - key: ADDICTO:0001308
     children:
     - key: GMHO:0000204
@@ -853,6 +987,9 @@
   children:
   - key: Study information
     children:
+    - key: BCIO:026001
+      variables:
+      - Country of intervention
     - key: GMHO:0000138
       variables:
       - Timepoint of measurement
