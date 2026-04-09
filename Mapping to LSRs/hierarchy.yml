@@ -694,7 +694,7 @@
       - key: GMHO:0000204
         variables:
         - 'Data type: endpoint vs. baseline difference in weight'
-        - Mean post-intervention weight
+        - Mean change in post-intervention weight
         - Number of participants with post-intervention evaluation on weight
         - Standard deviation of post-intervention weight
         children:
@@ -703,7 +703,7 @@
           - Number of participants with post-intervention evaluation on weight
         - key: OBI:0000679,IAO:0000003
           variables:
-          - Mean post-intervention weight
+          - Mean change in post-intervention weight
           - Unit for weight
         - key: OBCS:0000077
           variables:
@@ -734,7 +734,7 @@
         - key: OBI:0000679,IAO:0000003
           variables:
           - Mean baseline prolactin
-          - Scale for prolactin
+          - Unit of prolactin
         - key: GMHO:0000206
           variables:
           - Number of participants with baseline evaluation of prolactin       
@@ -751,7 +751,7 @@
         - key: OBI:0000679,IAO:0000003
           variables:
           - Mean post-intervention prolactin
-          - Scale for prolactin
+          - Unit of prolactin
         - key: OBCS:0000077
           variables:
           - Standard deviation of post-intervention prolactin
