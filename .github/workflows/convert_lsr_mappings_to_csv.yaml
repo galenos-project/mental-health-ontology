@@ -2,6 +2,7 @@ on:
   push:
     paths:
       - "Mapping to LSRs/Mental Health Ontology mapping to LSRs.xlsx"
+  workflow_dispatch:
 permissions:
     contents: write
 jobs:
