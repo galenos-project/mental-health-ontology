@@ -919,6 +919,8 @@
       variables:
       - Scale for cognition
     - key: BCIO:050851
+      variables:
+      - Type of bias targeted
       children:
       - key: GMHO:0000209
         variables:
