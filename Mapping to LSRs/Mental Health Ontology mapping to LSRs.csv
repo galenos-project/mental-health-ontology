@@ -687,7 +687,7 @@ LSR3_taar1_H/data/data_2024-01-22_LSR3_H.xlsx,https://doi.org/10.5281/zenodo.108
 ,,,,female_n,Number of female participants,GMHO:0000213,number of female biological sex,The number of female biological sex in a population.,female biological sex population statistic,,6,,,
 ,,,,female_n,Number of female participants,GMHO:0000267,number of female gender,The number of female gender in a population.,female gender population statistic,,6,,,
 ,,,,mean_age,Mean age per study arm,BCIO:015416,mean human age population statistic,The mean of human age in a population.,human age population statistic,,6,,,
-,,,,treat_dx,Intervention duration (numeric value),GMHO:0000005,intervention duration,A temporal interval between the start and end of an intervention.,one-dimensional temporal region,,6,,,
+,,,,trt_dx,Intervention duration (numeric value),GMHO:0000005,intervention duration,A temporal interval between the start and end of an intervention.,one-dimensional temporal region,,6,,,
 ,,,,trt_dx_unit,Intervention duration (unit),GMHO:0000005,intervention duration,A temporal interval between the start and end of an intervention.,one-dimensional temporal region,,6,,,
 ,,,,trt_dx_unit,Intervention duration (unit),IAO:0000003,measurement unit label,A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.,datum label,,6,,,
 ,,,,tgt,Type of bias targeted,BCIO:050851,cognitive bias process,A <cognitive process> that leads to systematic error in judgement or belief.,cognitive process,,6,,,
