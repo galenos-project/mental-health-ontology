@@ -724,7 +724,7 @@
         - key: STATO:0000562
           variables:
           - Standard error for midpoint estimate regarding he mean difference in QTc between the intervention and control condition
-    - key: OBA:1000952
+    - key: CMO:0001822
       children:
       - key: GMHO:0000209
         variables:
