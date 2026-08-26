@@ -694,5 +694,5 @@ LSR3_taar1_H/data/data_2024-01-22_LSR3_H.xlsx,https://doi.org/10.5281/zenodo.108
 ,,,,delivery_mode,Mode of delivery,GMHO:0000244,intervention mode of delivery,An intervention attribute that is the physical or informational medium through which an intervention is provided.,intervention attribute,,6,,,
 ,,,,stimuli,Stimuli used for training,BCIO:050783,stimulus,"An <entity> that acts as an input to a perceptual process leading to a thought, feeling or action.",entity,,6,,,
 ,,,,stimuli,Stimuli used for training,GMHO:0000241,mental health intervention content,An intervention content that is part of a mental health intervention.,intervention content,,6,,,
-,,,,n_sessions,Number of sessions,GMHO:0000274,number of mental health intervention contact events,A <data item> that is the number of contact events in a mental health intervention temporal part.,data item,,6,,,
+,,,,n_sessions,Number of sessions,BCIO:008515,number of intervention contact events,A <data item> that is the number of contact events in an intervention temporal part.,data item,,6,,,
 ,,,,doi,DOI of study,GMHO:0000261,digital object identifier,A textual entity that refers to the digital object identifier of a research study.,textual entity,,6,,,
