@@ -123,6 +123,7 @@
         <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000111>textual definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&apos;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
         <obo:IAO_0000115>English language definitions of what NCI means by the concept. These are limited to 1024 characters. They may also include information about the definition&apos;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115>The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
@@ -312,7 +313,9 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000111 xml:lang="en">term tracker item</obo:IAO_0000111>
         <obo:IAO_0000112>the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the URL for an ontology term tracker issue, such as https://github.com/monarch-initiative/mondo/issues/7588</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A URL for a request or discussion of an ontology term.</obo:IAO_0000115>
         <obo:IAO_0000115>An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
         <obo:IAO_0000117>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
@@ -775,6 +778,7 @@ Add as annotation triples in the granting ontology</obo:IAO_0000115>
 
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <obo:IAO_0000111>label</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">label</obo:IAO_0000111>
         <obo:IAO_0000115>A human readable name for this class.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">A human-readable name for the subject.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema.owl"/>
@@ -1120,6 +1124,20 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_009000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_009000">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051010"/>
+        <obo:IAO_0000112>Includes the start and end of the BCI and its parts.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An intervention attribute that is its temporal organisation.</obo:IAO_0000115>
+        <obo:IAO_0000118>BCI schedule of delivery</obo:IAO_0000118>
+        <rdfs:comment>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</rdfs:comment>
+        <rdfs:label>intervention schedule of delivery</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015092 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015092">
@@ -1398,7 +1416,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050976">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A data item about the number of people in a population.</obo:IAO_0000115>
         <rdfs:label>number of people in a population</rdfs:label>
     </owl:Class>
@@ -1411,9 +1429,20 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000112>Percentage of highly educated individuals in a population. 
 Mean age in a population.</obo:IAO_0000112>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A data item that is about the number or extent of something in a population.</obo:IAO_0000115>
         <rdfs:label>population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051010 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051010">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;process attribute&gt; whose bearer is an intervention.</obo:IAO_0000115>
+        <rdfs:label>intervention attribute</rdfs:label>
     </owl:Class>
     
 
@@ -2292,7 +2321,6 @@ Mean age in a population.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <obo:IAO_0000602>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] </obo:IAO_0000602>
         <rdfs:comment xml:lang="en">A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</rdfs:comment>
@@ -2710,7 +2738,7 @@ Mean age in a population.</obo:IAO_0000112>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000669">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000000"/>
         <obo:IAO_0000115>Any measurement of a structural part of a system of the body that is composed of tissues and cells that enable it to perform a particular function.</obo:IAO_0000115>
-        <oboInOwl:created_by>JSmith</oboInOwl:created_by>
+        <oboInOwl:created_by>jsmith</oboInOwl:created_by>
         <oboInOwl:creation_date>2012-02-15T05:00:53Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>clinical_measurement_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CMO:0000669</oboInOwl:id>
@@ -2730,7 +2758,7 @@ Mean age in a population.</obo:IAO_0000112>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000670">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000001"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000669"/>
-        <oboInOwl:created_by>JSmith</oboInOwl:created_by>
+        <oboInOwl:created_by>jsmith</oboInOwl:created_by>
         <oboInOwl:creation_date>2012-02-15T05:06:19Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>clinical_measurement_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CMO:0000670</oboInOwl:id>
@@ -2745,7 +2773,7 @@ Mean age in a population.</obo:IAO_0000112>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000023"/>
         <obo:IAO_0000115>Measurement of the amount in blood of any complex chemical substance produced in one part or organ of the body that initiates or regulates the activity of an organ or a group of cells in another part of the body.</obo:IAO_0000115>
-        <oboInOwl:created_by>JSmith</oboInOwl:created_by>
+        <oboInOwl:created_by>jsmith</oboInOwl:created_by>
         <oboInOwl:creation_date>2012-08-02T03:51:38Z</oboInOwl:creation_date>
         <oboInOwl:hasBroadSynonym>hormone measurement</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>EFO:0004730</oboInOwl:hasDbXref>
@@ -2767,7 +2795,7 @@ Mean age in a population.</obo:IAO_0000112>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001822">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000286"/>
         <obo:IAO_0000115>The amount of prolactin found in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them. Prolactin is a peptide hormone which is secreted by the anterior pituitary and is involved in lactation, growth regulation for tissues including cells of the immune system, and possibly supression of apoptosis. A peptide hormone is a complex organic compound that contains carbon, hydrogen, oxygen, nitrogen, and sulfur consisting of alpha-amino acids joined by peptide linkages, and that is produced in one part or organ of the body and initiates or regulates the activity of an organ or a group of cells in another part of the body.</obo:IAO_0000115>
-        <oboInOwl:created_by>JSmith</oboInOwl:created_by>
+        <oboInOwl:created_by>jsmith</oboInOwl:created_by>
         <oboInOwl:creation_date>2013-10-14T16:49:10Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>MESH:D011388</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT:0005121</oboInOwl:hasDbXref>
@@ -2838,10 +2866,12 @@ of this, different, term.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">data entity</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">data item</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be one or more truthful statement(s) about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</obo:IAO_0000116>
@@ -2858,9 +2888,11 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">data item</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:label xml:lang="en">data entity</rdfs:label>
         <rdfs:label xml:lang="en">data item</rdfs:label>
     </owl:Class>
     
