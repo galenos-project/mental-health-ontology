@@ -108,7 +108,7 @@
         variables:
         - Intervention duration (numeric value)
         - Intervention duration (unit)
-      - key: GMHO:0000274
+      - key: BCIO:008515
         variables:
         - Number of sessions
     - key: GMHO:0000244
