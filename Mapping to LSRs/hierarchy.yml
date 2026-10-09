@@ -96,7 +96,6 @@
       - key: GMHO:0000265
         variables:
         - Intensity of physical activity intervention
-    - key: GMHO:0000247
     - key: GMHO:0000264
       variables:
       - Type of exercise delivered in the intervention arm
